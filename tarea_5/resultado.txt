@@ -1,0 +1,3722 @@
+ERICK JESUS PEREZ CHIPA 
+Parametros: 
+ - Cantidad de individuos: 50
+ - Cantidad de genes por individuo: 5
+ - Seleccion por Torneo 
+ - Probabilidad de Cruzamiento : 0.5
+ - Cruzamiento PBX
+ - Probabilidad de Mutacion : 0.0
+ - Mutacion de Intercambio
+ - Cantidad de Iteraciones : 14
+ 
+POBLACION INICIAL: 
+0) A B C D F 
+1) A B C F D 
+2) A B D C F 
+3) A B D F C 
+4) A B F D C 
+5) A B F C D 
+6) A C B D F 
+7) A C B F D 
+8) A C D B F 
+9) A C D F B 
+10) A C F D B 
+11) A C F B D 
+12) A D C B F 
+13) A D C F B 
+14) A D B C F 
+15) A D B F C 
+16) A D F B C 
+17) A D F C B 
+18) A F C D B 
+19) A F C B D 
+20) A F D C B 
+21) A F D B C 
+22) A F B D C 
+23) A F B C D 
+24) B A C D F 
+25) B A C F D 
+26) B A D C F 
+27) B A D F C 
+28) B A F D C 
+29) B A F C D 
+30) B C A D F 
+31) B C A F D 
+32) B C D A F 
+33) B C D F A 
+34) B C F D A 
+35) B C F A D 
+36) B D C A F 
+37) B D C F A 
+38) B D A C F 
+39) B D A F C 
+40) B D F A C 
+41) B D F C A 
+42) B F C D A 
+43) B F C A D 
+44) B F D C A 
+45) B F D A C 
+46) B F A D C 
+47) B F A C D 
+48) C B A D F 
+49) C B A F D 
+
+ MATRIZ DEL PESO: 
+0 2 8 15 1 
+2 0 10 5 19 
+8 10 0 19 3 
+15 5 19 0 5 
+1 19 3 5 0 
+
+ Calcular la aptitud para cada individuo 
+0)  A B C D F      36
+1)  A B C F D      20
+2)  A B D C F      29
+3)  A B D F C      15
+4)  A B F D C      45
+5)  A B F C D      43
+6)  A C B D F      28
+7)  A C B F D      42
+8)  A C D B F      51
+9)  A C D F B      51
+10)  A C F D B      21
+11)  A C F B D      35
+12)  A D C B F      63
+13)  A D C F B      56
+14)  A D B C F      33
+15)  A D B F C      42
+16)  A D F B C      49
+17)  A D F C B      33
+18)  A F C D B      28
+19)  A F C B D      19
+20)  A F D C B      35
+21)  A F D B C      21
+22)  A F B D C      44
+23)  A F B C D      49
+24)  B A C D F      34
+25)  B A C F D      18
+26)  B A D C F      39
+27)  B A D F C      25
+28)  B A F D C      27
+29)  B A F C D      25
+30)  B C A D F      38
+31)  B C A F D      24
+32)  B C D A F      45
+33)  B C D F A      35
+34)  B C F D A      33
+35)  B C F A D      29
+36)  B D C A F      33
+37)  B D C F A      28
+38)  B D A C F      31
+39)  B D A F C      24
+40)  B D F A C      19
+41)  B D F C A      21
+42)  B F C D A      56
+43)  B F C A D      45
+44)  B F D C A      51
+45)  B F D A C      47
+46)  B F A D C      54
+47)  B F A C D      47
+48)  C B A D F      32
+49)  C B A F D      18
+
+ **********ITERACION 1**********
+0) 27 - 23 ganador: 27   Aptitud:  25   =>  B A D F C 
+1) 31 - 34 ganador: 31   Aptitud:  24   =>  B C A F D 
+2) 4 - 18 ganador: 18   Aptitud:  28   =>  A F C D B 
+3) 15 - 45 ganador: 15   Aptitud:  42   =>  A D B F C 
+4) 14 - 46 ganador: 14   Aptitud:  33   =>  A D B C F 
+5) 2 - 4 ganador: 2   Aptitud:  29   =>  A B D C F 
+6) 40 - 8 ganador: 40   Aptitud:  19   =>  B D F A C 
+7) 40 - 11 ganador: 40   Aptitud:  19   =>  B D F A C 
+8) 41 - 14 ganador: 41   Aptitud:  21   =>  B D F C A 
+9) 7 - 47 ganador: 7   Aptitud:  42   =>  A C B F D 
+10) 8 - 27 ganador: 27   Aptitud:  25   =>  B A D F C 
+11) 24 - 43 ganador: 24   Aptitud:  34   =>  B A C D F 
+12) 5 - 23 ganador: 5   Aptitud:  43   =>  A B F C D 
+13) 18 - 14 ganador: 18   Aptitud:  28   =>  A F C D B 
+14) 5 - 33 ganador: 33   Aptitud:  35   =>  B C D F A 
+15) 45 - 0 ganador: 0   Aptitud:  36   =>  A B C D F 
+16) 46 - 16 ganador: 16   Aptitud:  49   =>  A D F B C 
+17) 29 - 7 ganador: 29   Aptitud:  25   =>  B A F C D 
+18) 14 - 13 ganador: 14   Aptitud:  33   =>  A D B C F 
+19) 41 - 44 ganador: 41   Aptitud:  21   =>  B D F C A 
+20) 39 - 42 ganador: 39   Aptitud:  24   =>  B D A F C 
+21) 45 - 7 ganador: 7   Aptitud:  42   =>  A C B F D 
+22) 5 - 10 ganador: 10   Aptitud:  21   =>  A C F D B 
+23) 19 - 26 ganador: 19   Aptitud:  19   =>  A F C B D 
+24) 19 - 10 ganador: 19   Aptitud:  19   =>  A F C B D 
+25) 12 - 11 ganador: 11   Aptitud:  35   =>  A C F B D 
+26) 39 - 8 ganador: 39   Aptitud:  24   =>  B D A F C 
+27) 21 - 9 ganador: 21   Aptitud:  21   =>  A F D B C 
+28) 5 - 18 ganador: 18   Aptitud:  28   =>  A F C D B 
+29) 3 - 49 ganador: 3   Aptitud:  15   =>  A B D F C 
+30) 39 - 15 ganador: 39   Aptitud:  24   =>  B D A F C 
+31) 5 - 44 ganador: 5   Aptitud:  43   =>  A B F C D 
+32) 43 - 22 ganador: 22   Aptitud:  44   =>  A F B D C 
+33) 49 - 3 ganador: 3   Aptitud:  15   =>  A B D F C 
+34) 23 - 1 ganador: 1   Aptitud:  20   =>  A B C F D 
+35) 43 - 29 ganador: 29   Aptitud:  25   =>  B A F C D 
+36) 34 - 38 ganador: 38   Aptitud:  31   =>  B D A C F 
+37) 14 - 15 ganador: 14   Aptitud:  33   =>  A D B C F 
+38) 45 - 40 ganador: 40   Aptitud:  19   =>  B D F A C 
+39) 32 - 11 ganador: 11   Aptitud:  35   =>  A C F B D 
+40) 2 - 31 ganador: 31   Aptitud:  24   =>  B C A F D 
+41) 30 - 37 ganador: 37   Aptitud:  28   =>  B D C F A 
+42) 27 - 6 ganador: 27   Aptitud:  25   =>  B A D F C 
+43) 28 - 45 ganador: 28   Aptitud:  27   =>  B A F D C 
+44) 14 - 18 ganador: 18   Aptitud:  28   =>  A F C D B 
+45) 30 - 47 ganador: 30   Aptitud:  38   =>  B C A D F 
+46) 40 - 6 ganador: 40   Aptitud:  19   =>  B D F A C 
+47) 40 - 32 ganador: 40   Aptitud:  19   =>  B D F A C 
+48) 23 - 15 ganador: 15   Aptitud:  42   =>  A D B F C 
+49) 26 - 34 ganador: 34   Aptitud:  33   =>  B C F D A 
+-------------------------------------------------
+Padre 1: B A D F C 
+Padre 2: B C A F D 
+Hijo 1: B C A F D 
+Hijo 2: B A F C D 
+------------------------------------------------ 
+Padre 1: A F C D B 
+Padre 2: A D B F C 
+Hijo 1: A D F C B 
+Hijo 2: A F D B C 
+------------------------------------------------ 
+Padre 1: A D B C F 
+Padre 2: A B D C F 
+Hijo 1: A B D C F 
+Hijo 2: A D B C F 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: B D F A C 
+Hijo 1: B D F A C 
+Hijo 2: B D F A C 
+------------------------------------------------ 
+Padre 1: B D F C A 
+Padre 2: A C B F D 
+Hijo 1: B C F D A 
+Hijo 2: D C B F A 
+------------------------------------------------ 
+Padre 1: B A D F C 
+Padre 2: B A C D F 
+Hijo 1: B A D F C 
+Hijo 2: B A D C F 
+------------------------------------------------ 
+Padre 1: A B F C D 
+Padre 2: A F C D B 
+Hijo 1: A F C B D 
+Hijo 2: A B F C D 
+------------------------------------------------ 
+Padre 1: B C D F A 
+Padre 2: A B C D F 
+Hijo 1: B C D F A 
+Hijo 2: C B D A F 
+------------------------------------------------ 
+Padre 1: A D F B C 
+Padre 2: B A F C D 
+Hijo 1: A F B D C 
+Hijo 2: B D A F C 
+------------------------------------------------ 
+Padre 1: A D B C F 
+Padre 2: B D F C A 
+Hijo 1: D B C A F 
+Hijo 2: B D C F A 
+------------------------------------------------ 
+Padre 1: B D A F C 
+Padre 2: A C B F D 
+Hijo 1: B C A F D 
+Hijo 2: A D B F C 
+------------------------------------------------ 
+Padre 1: A C F D B 
+Padre 2: A F C B D 
+Hijo 1: A F C D B 
+Hijo 2: A C F B D 
+------------------------------------------------ 
+Padre 1: A F C B D 
+Padre 2: A C F B D 
+Hijo 1: A C F B D 
+Hijo 2: A F C B D 
+------------------------------------------------ 
+Padre 1: B D A F C 
+Padre 2: A F D B C 
+Hijo 1: B F D A C 
+Hijo 2: A D F B C 
+------------------------------------------------ 
+Padre 1: A F C D B 
+Padre 2: A B D F C 
+Hijo 1: A B F D C 
+Hijo 2: A F D B C 
+------------------------------------------------ 
+Padre 1: B D A F C 
+Padre 2: A B F C D 
+Hijo 1: B A F D C 
+Hijo 2: A D B F C 
+------------------------------------------------ 
+Padre 1: A F B D C 
+Padre 2: A B D F C 
+Hijo 1: A B F D C 
+Hijo 2: A F B D C 
+------------------------------------------------ 
+Padre 1: A B C F D 
+Padre 2: B A F C D 
+Hijo 1: A B C F D 
+Hijo 2: B A F C D 
+------------------------------------------------ 
+Padre 1: B D A C F 
+Padre 2: A D B C F 
+Hijo 1: B D A C F 
+Hijo 2: A D B C F 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: A C F B D 
+Hijo 1: B C F A D 
+Hijo 2: A D F B C 
+------------------------------------------------ 
+Padre 1: B C A F D 
+Padre 2: B D C F A 
+Hijo 1: B D C F A 
+Hijo 2: B C F D A 
+------------------------------------------------ 
+Padre 1: B A D F C 
+Padre 2: B A F D C 
+Hijo 1: B A D F C 
+Hijo 2: B A F D C 
+------------------------------------------------ 
+Padre 1: A F C D B 
+Padre 2: B C A D F 
+Hijo 1: A C D F B 
+Hijo 2: F C A D B 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: B D F A C 
+Hijo 1: B D F A C 
+Hijo 2: B D F A C 
+------------------------------------------------ 
+Padre 1: A D B F C 
+Padre 2: B C F D A 
+Hijo 1: C D B F A 
+Hijo 2: B D F C A 
+------------------------------------------------ 
+NUEVA POBLACION: 
+0) B C A F D 
+1) B A F C D 
+2) A D F C B 
+3) A F D B C 
+4) A B D C F 
+5) A D B C F 
+6) B D F A C 
+7) B D F A C 
+8) B C F D A 
+9) D C B F A 
+10) B A D F C 
+11) B A D C F 
+12) A F C B D 
+13) A B F C D 
+14) B C D F A 
+15) C B D A F 
+16) A F B D C 
+17) B D A F C 
+18) D B C A F 
+19) B D C F A 
+20) B C A F D 
+21) A D B F C 
+22) A F C D B 
+23) A C F B D 
+24) A C F B D 
+25) A F C B D 
+26) B F D A C 
+27) A D F B C 
+28) A B F D C 
+29) A F D B C 
+30) B A F D C 
+31) A D B F C 
+32) A B F D C 
+33) A F B D C 
+34) A B C F D 
+35) B A F C D 
+36) B D A C F 
+37) A D B C F 
+38) B C F A D 
+39) A D F B C 
+40) B D C F A 
+41) B C F D A 
+42) B A D F C 
+43) B A F D C 
+44) A C D F B 
+45) F C A D B 
+46) B D F A C 
+47) B D F A C 
+48) C D B F A 
+49) B D F C A 
+
+ Calcular la aptitud para cada individuo 
+0)  B C A F D      24
+1)  B A F C D      25
+2)  A D F C B      33
+3)  A F D B C      21
+4)  A B D C F      29
+5)  A D B C F      33
+6)  B D F A C      19
+7)  B D F A C      19
+8)  B C F D A      33
+9)  D C B F A      49
+10)  B A D F C      25
+11)  B A D C F      39
+12)  A F C B D      19
+13)  A B F C D      43
+14)  B C D F A      35
+15)  C B D A F      31
+16)  A F B D C      44
+17)  B D A F C      24
+18)  D B C A F      24
+19)  B D C F A      28
+20)  B C A F D      24
+21)  A D B F C      42
+22)  A F C D B      28
+23)  A C F B D      35
+24)  A C F B D      35
+25)  A F C B D      19
+26)  B F D A C      47
+27)  A D F B C      49
+28)  A B F D C      45
+29)  A F D B C      21
+30)  B A F D C      27
+31)  A D B F C      42
+32)  A B F D C      45
+33)  A F B D C      44
+34)  A B C F D      20
+35)  B A F C D      25
+36)  B D A C F      31
+37)  A D B C F      33
+38)  B C F A D      29
+39)  A D F B C      49
+40)  B D C F A      28
+41)  B C F D A      33
+42)  B A D F C      25
+43)  B A F D C      27
+44)  A C D F B      51
+45)  F C A D B      31
+46)  B D F A C      19
+47)  B D F A C      19
+48)  C D B F A      44
+49)  B D F C A      21
+
+ **********ITERACION 2**********
+0) 27 - 23 ganador: 23   Aptitud:  35   =>  A C F B D 
+1) 31 - 34 ganador: 34   Aptitud:  20   =>  A B C F D 
+2) 4 - 18 ganador: 18   Aptitud:  24   =>  D B C A F 
+3) 15 - 45 ganador: 15   Aptitud:  31   =>  C B D A F 
+4) 14 - 46 ganador: 46   Aptitud:  19   =>  B D F A C 
+5) 2 - 4 ganador: 4   Aptitud:  29   =>  A B D C F 
+6) 40 - 8 ganador: 40   Aptitud:  28   =>  B D C F A 
+7) 40 - 11 ganador: 40   Aptitud:  28   =>  B D C F A 
+8) 41 - 14 ganador: 41   Aptitud:  33   =>  B C F D A 
+9) 7 - 47 ganador: 7   Aptitud:  19   =>  B D F A C 
+10) 8 - 27 ganador: 8   Aptitud:  33   =>  B C F D A 
+11) 24 - 43 ganador: 43   Aptitud:  27   =>  B A F D C 
+12) 5 - 23 ganador: 5   Aptitud:  33   =>  A D B C F 
+13) 18 - 14 ganador: 18   Aptitud:  24   =>  D B C A F 
+14) 5 - 33 ganador: 5   Aptitud:  33   =>  A D B C F 
+15) 45 - 0 ganador: 0   Aptitud:  24   =>  B C A F D 
+16) 46 - 16 ganador: 46   Aptitud:  19   =>  B D F A C 
+17) 29 - 7 ganador: 7   Aptitud:  19   =>  B D F A C 
+18) 14 - 13 ganador: 14   Aptitud:  35   =>  B C D F A 
+19) 41 - 44 ganador: 41   Aptitud:  33   =>  B C F D A 
+20) 39 - 42 ganador: 42   Aptitud:  25   =>  B A D F C 
+21) 45 - 7 ganador: 7   Aptitud:  19   =>  B D F A C 
+22) 5 - 10 ganador: 10   Aptitud:  25   =>  B A D F C 
+23) 19 - 26 ganador: 19   Aptitud:  28   =>  B D C F A 
+24) 19 - 10 ganador: 10   Aptitud:  25   =>  B A D F C 
+25) 12 - 11 ganador: 12   Aptitud:  19   =>  A F C B D 
+26) 39 - 8 ganador: 8   Aptitud:  33   =>  B C F D A 
+27) 21 - 9 ganador: 21   Aptitud:  42   =>  A D B F C 
+28) 5 - 18 ganador: 18   Aptitud:  24   =>  D B C A F 
+29) 3 - 49 ganador: 3   Aptitud:  21   =>  A F D B C 
+30) 39 - 15 ganador: 15   Aptitud:  31   =>  C B D A F 
+31) 5 - 44 ganador: 5   Aptitud:  33   =>  A D B C F 
+32) 43 - 22 ganador: 43   Aptitud:  27   =>  B A F D C 
+33) 49 - 3 ganador: 49   Aptitud:  21   =>  B D F C A 
+34) 23 - 1 ganador: 1   Aptitud:  25   =>  B A F C D 
+35) 43 - 29 ganador: 29   Aptitud:  21   =>  A F D B C 
+36) 34 - 38 ganador: 34   Aptitud:  20   =>  A B C F D 
+37) 14 - 15 ganador: 15   Aptitud:  31   =>  C B D A F 
+38) 45 - 40 ganador: 40   Aptitud:  28   =>  B D C F A 
+39) 32 - 11 ganador: 11   Aptitud:  39   =>  B A D C F 
+40) 2 - 31 ganador: 2   Aptitud:  33   =>  A D F C B 
+41) 30 - 37 ganador: 30   Aptitud:  27   =>  B A F D C 
+42) 27 - 6 ganador: 6   Aptitud:  19   =>  B D F A C 
+43) 28 - 45 ganador: 45   Aptitud:  31   =>  F C A D B 
+44) 14 - 18 ganador: 18   Aptitud:  24   =>  D B C A F 
+45) 30 - 47 ganador: 47   Aptitud:  19   =>  B D F A C 
+46) 40 - 6 ganador: 6   Aptitud:  19   =>  B D F A C 
+47) 40 - 32 ganador: 40   Aptitud:  28   =>  B D C F A 
+48) 23 - 15 ganador: 15   Aptitud:  31   =>  C B D A F 
+49) 26 - 34 ganador: 34   Aptitud:  20   =>  A B C F D 
+-------------------------------------------------
+Padre 1: A C F B D 
+Padre 2: A B C F D 
+Hijo 1: A B C F D 
+Hijo 2: A C B F D 
+------------------------------------------------ 
+Padre 1: D B C A F 
+Padre 2: C B D A F 
+Hijo 1: D B C A F 
+Hijo 2: C B D A F 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: A B D C F 
+Hijo 1: B D A F C 
+Hijo 2: A D B C F 
+------------------------------------------------ 
+Padre 1: B D C F A 
+Padre 2: B D C F A 
+Hijo 1: B D C F A 
+Hijo 2: B D C F A 
+------------------------------------------------ 
+Padre 1: B C F D A 
+Padre 2: B D F A C 
+Hijo 1: B D F C A 
+Hijo 2: B C D F A 
+------------------------------------------------ 
+Padre 1: B C F D A 
+Padre 2: B A F D C 
+Hijo 1: B A F D C 
+Hijo 2: B C F D A 
+------------------------------------------------ 
+Padre 1: A D B C F 
+Padre 2: D B C A F 
+Hijo 1: A B D C F 
+Hijo 2: D B C A F 
+------------------------------------------------ 
+Padre 1: A D B C F 
+Padre 2: B C A F D 
+Hijo 1: A C B D F 
+Hijo 2: B D C A F 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: B D F A C 
+Hijo 1: B D F A C 
+Hijo 2: B D F A C 
+------------------------------------------------ 
+Padre 1: B C D F A 
+Padre 2: B C F D A 
+Hijo 1: B C D F A 
+Hijo 2: B C F D A 
+------------------------------------------------ 
+Padre 1: B A D F C 
+Padre 2: B D F A C 
+Hijo 1: B D A F C 
+Hijo 2: B A D F C 
+------------------------------------------------ 
+Padre 1: B A D F C 
+Padre 2: B D C F A 
+Hijo 1: B D F A C 
+Hijo 2: B A D F C 
+------------------------------------------------ 
+Padre 1: B A D F C 
+Padre 2: A F C B D 
+Hijo 1: B F A D C 
+Hijo 2: A F B C D 
+------------------------------------------------ 
+Padre 1: B C F D A 
+Padre 2: A D B F C 
+Hijo 1: B D F C A 
+Hijo 2: C D B F A 
+------------------------------------------------ 
+Padre 1: D B C A F 
+Padre 2: A F D B C 
+Hijo 1: D F B A C 
+Hijo 2: A B D F C 
+------------------------------------------------ 
+Padre 1: C B D A F 
+Padre 2: A D B C F 
+Hijo 1: C D B A F 
+Hijo 2: A B D C F 
+------------------------------------------------ 
+Padre 1: B A F D C 
+Padre 2: B D F C A 
+Hijo 1: B D F A C 
+Hijo 2: B A D F C 
+------------------------------------------------ 
+Padre 1: B A F C D 
+Padre 2: A F D B C 
+Hijo 1: B F A C D 
+Hijo 2: A F B D C 
+------------------------------------------------ 
+Padre 1: A B C F D 
+Padre 2: C B D A F 
+Hijo 1: A B C F D 
+Hijo 2: C B A D F 
+------------------------------------------------ 
+Padre 1: B D C F A 
+Padre 2: B A D C F 
+Hijo 1: B A D C F 
+Hijo 2: B D C A F 
+------------------------------------------------ 
+Padre 1: A D F C B 
+Padre 2: B A F D C 
+Hijo 1: A D F C B 
+Hijo 2: D A F B C 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: F C A D B 
+Hijo 1: C D F A B 
+Hijo 2: F D A C B 
+------------------------------------------------ 
+Padre 1: D B C A F 
+Padre 2: B D F A C 
+Hijo 1: D B A C F 
+Hijo 2: B D A F C 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: B D C F A 
+Hijo 1: B D F A C 
+Hijo 2: B D F C A 
+------------------------------------------------ 
+Padre 1: C B D A F 
+Padre 2: A B C F D 
+Hijo 1: C B A D F 
+Hijo 2: A B C F D 
+------------------------------------------------ 
+NUEVA POBLACION: 
+0) A B C F D 
+1) A C B F D 
+2) D B C A F 
+3) C B D A F 
+4) B D A F C 
+5) A D B C F 
+6) B D C F A 
+7) B D C F A 
+8) B D F C A 
+9) B C D F A 
+10) B A F D C 
+11) B C F D A 
+12) A B D C F 
+13) D B C A F 
+14) A C B D F 
+15) B D C A F 
+16) B D F A C 
+17) B D F A C 
+18) B C D F A 
+19) B C F D A 
+20) B D A F C 
+21) B A D F C 
+22) B D F A C 
+23) B A D F C 
+24) B F A D C 
+25) A F B C D 
+26) B D F C A 
+27) C D B F A 
+28) D F B A C 
+29) A B D F C 
+30) C D B A F 
+31) A B D C F 
+32) B D F A C 
+33) B A D F C 
+34) B F A C D 
+35) A F B D C 
+36) A B C F D 
+37) C B A D F 
+38) B A D C F 
+39) B D C A F 
+40) A D F C B 
+41) D A F B C 
+42) C D F A B 
+43) F D A C B 
+44) D B A C F 
+45) B D A F C 
+46) B D F A C 
+47) B D F C A 
+48) C B A D F 
+49) A B C F D 
+
+ Calcular la aptitud para cada individuo 
+0)  A B C F D      20
+1)  A C B F D      42
+2)  D B C A F      24
+3)  C B D A F      31
+4)  B D A F C      24
+5)  A D B C F      33
+6)  B D C F A      28
+7)  B D C F A      28
+8)  B D F C A      21
+9)  B C D F A      35
+10)  B A F D C      27
+11)  B C F D A      33
+12)  A B D C F      29
+13)  D B C A F      24
+14)  A C B D F      28
+15)  B D C A F      33
+16)  B D F A C      19
+17)  B D F A C      19
+18)  B C D F A      35
+19)  B C F D A      33
+20)  B D A F C      24
+21)  B A D F C      25
+22)  B D F A C      19
+23)  B A D F C      25
+24)  B F A D C      54
+25)  A F B C D      49
+26)  B D F C A      21
+27)  C D B F A      44
+28)  D F B A C      34
+29)  A B D F C      15
+30)  C D B A F      27
+31)  A B D C F      29
+32)  B D F A C      19
+33)  B A D F C      25
+34)  B F A C D      47
+35)  A F B D C      44
+36)  A B C F D      20
+37)  C B A D F      32
+38)  B A D C F      39
+39)  B D C A F      33
+40)  A D F C B      33
+41)  D A F B C      45
+42)  C D F A B      27
+43)  F D A C B      38
+44)  D B A C F      18
+45)  B D A F C      24
+46)  B D F A C      19
+47)  B D F C A      21
+48)  C B A D F      32
+49)  A B C F D      20
+
+ **********ITERACION 3**********
+0) 27 - 23 ganador: 23   Aptitud:  25   =>  B A D F C 
+1) 31 - 34 ganador: 31   Aptitud:  29   =>  A B D C F 
+2) 4 - 18 ganador: 4   Aptitud:  24   =>  B D A F C 
+3) 15 - 45 ganador: 45   Aptitud:  24   =>  B D A F C 
+4) 14 - 46 ganador: 46   Aptitud:  19   =>  B D F A C 
+5) 2 - 4 ganador: 2   Aptitud:  24   =>  D B C A F 
+6) 40 - 8 ganador: 8   Aptitud:  21   =>  B D F C A 
+7) 40 - 11 ganador: 40   Aptitud:  33   =>  A D F C B 
+8) 41 - 14 ganador: 14   Aptitud:  28   =>  A C B D F 
+9) 7 - 47 ganador: 47   Aptitud:  21   =>  B D F C A 
+10) 8 - 27 ganador: 8   Aptitud:  21   =>  B D F C A 
+11) 24 - 43 ganador: 43   Aptitud:  38   =>  F D A C B 
+12) 5 - 23 ganador: 23   Aptitud:  25   =>  B A D F C 
+13) 18 - 14 ganador: 14   Aptitud:  28   =>  A C B D F 
+14) 5 - 33 ganador: 33   Aptitud:  25   =>  B A D F C 
+15) 45 - 0 ganador: 0   Aptitud:  20   =>  A B C F D 
+16) 46 - 16 ganador: 46   Aptitud:  19   =>  B D F A C 
+17) 29 - 7 ganador: 29   Aptitud:  15   =>  A B D F C 
+18) 14 - 13 ganador: 13   Aptitud:  24   =>  D B C A F 
+19) 41 - 44 ganador: 44   Aptitud:  18   =>  D B A C F 
+20) 39 - 42 ganador: 42   Aptitud:  27   =>  C D F A B 
+21) 45 - 7 ganador: 45   Aptitud:  24   =>  B D A F C 
+22) 5 - 10 ganador: 10   Aptitud:  27   =>  B A F D C 
+23) 19 - 26 ganador: 26   Aptitud:  21   =>  B D F C A 
+24) 19 - 10 ganador: 10   Aptitud:  27   =>  B A F D C 
+25) 12 - 11 ganador: 12   Aptitud:  29   =>  A B D C F 
+26) 39 - 8 ganador: 8   Aptitud:  21   =>  B D F C A 
+27) 21 - 9 ganador: 21   Aptitud:  25   =>  B A D F C 
+28) 5 - 18 ganador: 5   Aptitud:  33   =>  A D B C F 
+29) 3 - 49 ganador: 49   Aptitud:  20   =>  A B C F D 
+30) 39 - 15 ganador: 39   Aptitud:  33   =>  B D C A F 
+31) 5 - 44 ganador: 44   Aptitud:  18   =>  D B A C F 
+32) 43 - 22 ganador: 22   Aptitud:  19   =>  B D F A C 
+33) 49 - 3 ganador: 49   Aptitud:  20   =>  A B C F D 
+34) 23 - 1 ganador: 23   Aptitud:  25   =>  B A D F C 
+35) 43 - 29 ganador: 29   Aptitud:  15   =>  A B D F C 
+36) 34 - 38 ganador: 38   Aptitud:  39   =>  B A D C F 
+37) 14 - 15 ganador: 14   Aptitud:  28   =>  A C B D F 
+38) 45 - 40 ganador: 45   Aptitud:  24   =>  B D A F C 
+39) 32 - 11 ganador: 32   Aptitud:  19   =>  B D F A C 
+40) 2 - 31 ganador: 2   Aptitud:  24   =>  D B C A F 
+41) 30 - 37 ganador: 30   Aptitud:  27   =>  C D B A F 
+42) 27 - 6 ganador: 6   Aptitud:  28   =>  B D C F A 
+43) 28 - 45 ganador: 45   Aptitud:  24   =>  B D A F C 
+44) 14 - 18 ganador: 14   Aptitud:  28   =>  A C B D F 
+45) 30 - 47 ganador: 47   Aptitud:  21   =>  B D F C A 
+46) 40 - 6 ganador: 6   Aptitud:  28   =>  B D C F A 
+47) 40 - 32 ganador: 32   Aptitud:  19   =>  B D F A C 
+48) 23 - 15 ganador: 23   Aptitud:  25   =>  B A D F C 
+49) 26 - 34 ganador: 26   Aptitud:  21   =>  B D F C A 
+-------------------------------------------------
+Padre 1: B A D F C 
+Padre 2: A B D C F 
+Hijo 1: B A D F C 
+Hijo 2: A B D C F 
+------------------------------------------------ 
+Padre 1: B D A F C 
+Padre 2: B D A F C 
+Hijo 1: B D A F C 
+Hijo 2: B D A F C 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: D B C A F 
+Hijo 1: B D A F C 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: B D F C A 
+Padre 2: A D F C B 
+Hijo 1: D F C B A 
+Hijo 2: D F C A B 
+------------------------------------------------ 
+Padre 1: A C B D F 
+Padre 2: B D F C A 
+Hijo 1: D C B A F 
+Hijo 2: B C D F A 
+------------------------------------------------ 
+Padre 1: B D F C A 
+Padre 2: F D A C B 
+Hijo 1: D F C B A 
+Hijo 2: F D C A B 
+------------------------------------------------ 
+Padre 1: B A D F C 
+Padre 2: A C B D F 
+Hijo 1: B C A D F 
+Hijo 2: A B D C F 
+------------------------------------------------ 
+Padre 1: B A D F C 
+Padre 2: A B C F D 
+Hijo 1: B A F D C 
+Hijo 2: A B F C D 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: A B D F C 
+Hijo 1: B D F A C 
+Hijo 2: A D B F C 
+------------------------------------------------ 
+Padre 1: D B C A F 
+Padre 2: D B A C F 
+Hijo 1: D B C A F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: C D F A B 
+Padre 2: B D A F C 
+Hijo 1: D F A C B 
+Hijo 2: D A F B C 
+------------------------------------------------ 
+Padre 1: B A F D C 
+Padre 2: B D F C A 
+Hijo 1: B D F A C 
+Hijo 2: B A D F C 
+------------------------------------------------ 
+Padre 1: B A F D C 
+Padre 2: A B D C F 
+Hijo 1: B A D F C 
+Hijo 2: A B D C F 
+------------------------------------------------ 
+Padre 1: B D F C A 
+Padre 2: B A D F C 
+Hijo 1: B A D F C 
+Hijo 2: B D F A C 
+------------------------------------------------ 
+Padre 1: A D B C F 
+Padre 2: A B C F D 
+Hijo 1: A B C D F 
+Hijo 2: A D B C F 
+------------------------------------------------ 
+Padre 1: B D C A F 
+Padre 2: D B A C F 
+Hijo 1: B D C A F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: A B C F D 
+Hijo 1: B F A D C 
+Hijo 2: A D B F C 
+------------------------------------------------ 
+Padre 1: B A D F C 
+Padre 2: A B D F C 
+Hijo 1: B A D F C 
+Hijo 2: A B D F C 
+------------------------------------------------ 
+Padre 1: B A D C F 
+Padre 2: A C B D F 
+Hijo 1: B C A D F 
+Hijo 2: A C B D F 
+------------------------------------------------ 
+Padre 1: B D A F C 
+Padre 2: B D F A C 
+Hijo 1: B D A F C 
+Hijo 2: B D F A C 
+------------------------------------------------ 
+Padre 1: D B C A F 
+Padre 2: C D B A F 
+Hijo 1: D B C A F 
+Hijo 2: C B D A F 
+------------------------------------------------ 
+Padre 1: B D C F A 
+Padre 2: B D A F C 
+Hijo 1: B D F C A 
+Hijo 2: B D F A C 
+------------------------------------------------ 
+Padre 1: A C B D F 
+Padre 2: B D F C A 
+Hijo 1: D C B A F 
+Hijo 2: B C D F A 
+------------------------------------------------ 
+Padre 1: B D C F A 
+Padre 2: B D F A C 
+Hijo 1: B D F C A 
+Hijo 2: B D F A C 
+------------------------------------------------ 
+Padre 1: B A D F C 
+Padre 2: B D F C A 
+Hijo 1: B D F A C 
+Hijo 2: B A D F C 
+------------------------------------------------ 
+NUEVA POBLACION: 
+0) B A D F C 
+1) A B D C F 
+2) B D A F C 
+3) B D A F C 
+4) B D A F C 
+5) D B A C F 
+6) D F C B A 
+7) D F C A B 
+8) D C B A F 
+9) B C D F A 
+10) D F C B A 
+11) F D C A B 
+12) B C A D F 
+13) A B D C F 
+14) B A F D C 
+15) A B F C D 
+16) B D F A C 
+17) A D B F C 
+18) D B C A F 
+19) D B A C F 
+20) D F A C B 
+21) D A F B C 
+22) B D F A C 
+23) B A D F C 
+24) B A D F C 
+25) A B D C F 
+26) B A D F C 
+27) B D F A C 
+28) A B C D F 
+29) A D B C F 
+30) B D C A F 
+31) D B A C F 
+32) B F A D C 
+33) A D B F C 
+34) B A D F C 
+35) A B D F C 
+36) B C A D F 
+37) A C B D F 
+38) B D A F C 
+39) B D F A C 
+40) D B C A F 
+41) C B D A F 
+42) B D F C A 
+43) B D F A C 
+44) D C B A F 
+45) B C D F A 
+46) B D F C A 
+47) B D F A C 
+48) B D F A C 
+49) B A D F C 
+
+ Calcular la aptitud para cada individuo 
+0)  B A D F C      25
+1)  A B D C F      29
+2)  B D A F C      24
+3)  B D A F C      24
+4)  B D A F C      24
+5)  D B A C F      18
+6)  D F C B A      20
+7)  D F C A B      18
+8)  D C B A F      32
+9)  B C D F A      35
+10)  D F C B A      20
+11)  F D C A B      34
+12)  B C A D F      38
+13)  A B D C F      29
+14)  B A F D C      27
+15)  A B F C D      43
+16)  B D F A C      19
+17)  A D B F C      42
+18)  D B C A F      24
+19)  D B A C F      18
+20)  D F A C B      24
+21)  D A F B C      45
+22)  B D F A C      19
+23)  B A D F C      25
+24)  B A D F C      25
+25)  A B D C F      29
+26)  B A D F C      25
+27)  B D F A C      19
+28)  A B C D F      36
+29)  A D B C F      33
+30)  B D C A F      33
+31)  D B A C F      18
+32)  B F A D C      54
+33)  A D B F C      42
+34)  B A D F C      25
+35)  A B D F C      15
+36)  B C A D F      38
+37)  A C B D F      28
+38)  B D A F C      24
+39)  B D F A C      19
+40)  D B C A F      24
+41)  C B D A F      31
+42)  B D F C A      21
+43)  B D F A C      19
+44)  D C B A F      32
+45)  B C D F A      35
+46)  B D F C A      21
+47)  B D F A C      19
+48)  B D F A C      19
+49)  B A D F C      25
+
+ **********ITERACION 4**********
+0) 27 - 23 ganador: 27   Aptitud:  19   =>  B D F A C 
+1) 31 - 34 ganador: 31   Aptitud:  18   =>  D B A C F 
+2) 4 - 18 ganador: 4   Aptitud:  24   =>  B D A F C 
+3) 15 - 45 ganador: 45   Aptitud:  35   =>  B C D F A 
+4) 14 - 46 ganador: 46   Aptitud:  21   =>  B D F C A 
+5) 2 - 4 ganador: 2   Aptitud:  24   =>  B D A F C 
+6) 40 - 8 ganador: 40   Aptitud:  24   =>  D B C A F 
+7) 40 - 11 ganador: 40   Aptitud:  24   =>  D B C A F 
+8) 41 - 14 ganador: 14   Aptitud:  27   =>  B A F D C 
+9) 7 - 47 ganador: 7   Aptitud:  18   =>  D F C A B 
+10) 8 - 27 ganador: 27   Aptitud:  19   =>  B D F A C 
+11) 24 - 43 ganador: 43   Aptitud:  19   =>  B D F A C 
+12) 5 - 23 ganador: 5   Aptitud:  18   =>  D B A C F 
+13) 18 - 14 ganador: 18   Aptitud:  24   =>  D B C A F 
+14) 5 - 33 ganador: 5   Aptitud:  18   =>  D B A C F 
+15) 45 - 0 ganador: 0   Aptitud:  25   =>  B A D F C 
+16) 46 - 16 ganador: 16   Aptitud:  19   =>  B D F A C 
+17) 29 - 7 ganador: 7   Aptitud:  18   =>  D F C A B 
+18) 14 - 13 ganador: 14   Aptitud:  27   =>  B A F D C 
+19) 41 - 44 ganador: 41   Aptitud:  31   =>  C B D A F 
+20) 39 - 42 ganador: 39   Aptitud:  19   =>  B D F A C 
+21) 45 - 7 ganador: 7   Aptitud:  18   =>  D F C A B 
+22) 5 - 10 ganador: 5   Aptitud:  18   =>  D B A C F 
+23) 19 - 26 ganador: 19   Aptitud:  18   =>  D B A C F 
+24) 19 - 10 ganador: 19   Aptitud:  18   =>  D B A C F 
+25) 12 - 11 ganador: 11   Aptitud:  34   =>  F D C A B 
+26) 39 - 8 ganador: 39   Aptitud:  19   =>  B D F A C 
+27) 21 - 9 ganador: 9   Aptitud:  35   =>  B C D F A 
+28) 5 - 18 ganador: 5   Aptitud:  18   =>  D B A C F 
+29) 3 - 49 ganador: 3   Aptitud:  24   =>  B D A F C 
+30) 39 - 15 ganador: 39   Aptitud:  19   =>  B D F A C 
+31) 5 - 44 ganador: 5   Aptitud:  18   =>  D B A C F 
+32) 43 - 22 ganador: 43   Aptitud:  19   =>  B D F A C 
+33) 49 - 3 ganador: 3   Aptitud:  24   =>  B D A F C 
+34) 23 - 1 ganador: 23   Aptitud:  25   =>  B A D F C 
+35) 43 - 29 ganador: 43   Aptitud:  19   =>  B D F A C 
+36) 34 - 38 ganador: 38   Aptitud:  24   =>  B D A F C 
+37) 14 - 15 ganador: 14   Aptitud:  27   =>  B A F D C 
+38) 45 - 40 ganador: 40   Aptitud:  24   =>  D B C A F 
+39) 32 - 11 ganador: 11   Aptitud:  34   =>  F D C A B 
+40) 2 - 31 ganador: 31   Aptitud:  18   =>  D B A C F 
+41) 30 - 37 ganador: 37   Aptitud:  28   =>  A C B D F 
+42) 27 - 6 ganador: 27   Aptitud:  19   =>  B D F A C 
+43) 28 - 45 ganador: 45   Aptitud:  35   =>  B C D F A 
+44) 14 - 18 ganador: 18   Aptitud:  24   =>  D B C A F 
+45) 30 - 47 ganador: 47   Aptitud:  19   =>  B D F A C 
+46) 40 - 6 ganador: 6   Aptitud:  20   =>  D F C B A 
+47) 40 - 32 ganador: 40   Aptitud:  24   =>  D B C A F 
+48) 23 - 15 ganador: 23   Aptitud:  25   =>  B A D F C 
+49) 26 - 34 ganador: 26   Aptitud:  25   =>  B A D F C 
+-------------------------------------------------
+Padre 1: B D F A C 
+Padre 2: D B A C F 
+Hijo 1: B D A F C 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: B D A F C 
+Padre 2: B C D F A 
+Hijo 1: B C D F A 
+Hijo 2: B D F C A 
+------------------------------------------------ 
+Padre 1: B D F C A 
+Padre 2: B D A F C 
+Hijo 1: B D F C A 
+Hijo 2: B D F A C 
+------------------------------------------------ 
+Padre 1: D B C A F 
+Padre 2: D B C A F 
+Hijo 1: D B C A F 
+Hijo 2: D B C A F 
+------------------------------------------------ 
+Padre 1: B A F D C 
+Padre 2: D F C A B 
+Hijo 1: F A D B C 
+Hijo 2: D A F C B 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: B D F A C 
+Hijo 1: B D F A C 
+Hijo 2: B D F A C 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B C A F 
+Hijo 1: D B A C F 
+Hijo 2: D B C A F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: B A D F C 
+Hijo 1: D A B C F 
+Hijo 2: B A D F C 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: D F C A B 
+Hijo 1: F D A B C 
+Hijo 2: D F A C B 
+------------------------------------------------ 
+Padre 1: B A F D C 
+Padre 2: C B D A F 
+Hijo 1: B A D F C 
+Hijo 2: A B D C F 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: D F C A B 
+Hijo 1: F D A B C 
+Hijo 2: D F A C B 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: F D C A B 
+Hijo 1: D A C B F 
+Hijo 2: B D C A F 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: B C D F A 
+Hijo 1: B C D F A 
+Hijo 2: B D F C A 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: B D A F C 
+Hijo 1: D B A C F 
+Hijo 2: B D A F C 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: D B A C F 
+Hijo 1: B D A F C 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: B D A F C 
+Hijo 1: B D F A C 
+Hijo 2: B D A F C 
+------------------------------------------------ 
+Padre 1: B A D F C 
+Padre 2: B D F A C 
+Hijo 1: B D A F C 
+Hijo 2: B A D F C 
+------------------------------------------------ 
+Padre 1: B D A F C 
+Padre 2: B A F D C 
+Hijo 1: B A D F C 
+Hijo 2: B D A F C 
+------------------------------------------------ 
+Padre 1: D B C A F 
+Padre 2: F D C A B 
+Hijo 1: D C A B F 
+Hijo 2: B D C A F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: A C B D F 
+Hijo 1: D C B A F 
+Hijo 2: A B C D F 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: B C D F A 
+Hijo 1: B C D F A 
+Hijo 2: B D F C A 
+------------------------------------------------ 
+Padre 1: D B C A F 
+Padre 2: B D F A C 
+Hijo 1: D B A C F 
+Hijo 2: B D A F C 
+------------------------------------------------ 
+Padre 1: D F C B A 
+Padre 2: D B C A F 
+Hijo 1: D B C F A 
+Hijo 2: D F B C A 
+------------------------------------------------ 
+Padre 1: B A D F C 
+Padre 2: B A D F C 
+Hijo 1: B A D F C 
+Hijo 2: B A D F C 
+------------------------------------------------ 
+NUEVA POBLACION: 
+0) B D A F C 
+1) D B A C F 
+2) B C D F A 
+3) B D F C A 
+4) B D F C A 
+5) B D F A C 
+6) D B C A F 
+7) D B C A F 
+8) F A D B C 
+9) D A F C B 
+10) B D F A C 
+11) B D F A C 
+12) D B A C F 
+13) D B C A F 
+14) D A B C F 
+15) B A D F C 
+16) F D A B C 
+17) D F A C B 
+18) B A D F C 
+19) A B D C F 
+20) F D A B C 
+21) D F A C B 
+22) D B A C F 
+23) D B A C F 
+24) D A C B F 
+25) B D C A F 
+26) B C D F A 
+27) B D F C A 
+28) D B A C F 
+29) B D A F C 
+30) B D A F C 
+31) D B A C F 
+32) B D F A C 
+33) B D A F C 
+34) B D A F C 
+35) B A D F C 
+36) B A D F C 
+37) B D A F C 
+38) D C A B F 
+39) B D C A F 
+40) D C B A F 
+41) A B C D F 
+42) B C D F A 
+43) B D F C A 
+44) D B A C F 
+45) B D A F C 
+46) D B C F A 
+47) D F B C A 
+48) B A D F C 
+49) B A D F C 
+
+ Calcular la aptitud para cada individuo 
+0)  B D A F C      24
+1)  D B A C F      18
+2)  B C D F A      35
+3)  B D F C A      21
+4)  B D F C A      21
+5)  B D F A C      19
+6)  D B C A F      24
+7)  D B C A F      24
+8)  F A D B C      31
+9)  D A F C B      29
+10)  B D F A C      19
+11)  B D F A C      19
+12)  D B A C F      18
+13)  D B C A F      24
+14)  D A B C F      30
+15)  B A D F C      25
+16)  F D A B C      32
+17)  D F A C B      24
+18)  B A D F C      25
+19)  A B D C F      29
+20)  F D A B C      32
+21)  D F A C B      24
+22)  D B A C F      18
+23)  D B A C F      18
+24)  D A C B F      52
+25)  B D C A F      33
+26)  B C D F A      35
+27)  B D F C A      21
+28)  D B A C F      18
+29)  B D A F C      24
+30)  B D A F C      24
+31)  D B A C F      18
+32)  B D F A C      19
+33)  B D A F C      24
+34)  B D A F C      24
+35)  B A D F C      25
+36)  B A D F C      25
+37)  B D A F C      24
+38)  D C A B F      48
+39)  B D C A F      33
+40)  D C B A F      32
+41)  A B C D F      36
+42)  B C D F A      35
+43)  B D F C A      21
+44)  D B A C F      18
+45)  B D A F C      24
+46)  D B C F A      19
+47)  D F B C A      42
+48)  B A D F C      25
+49)  B A D F C      25
+
+ **********ITERACION 5**********
+0) 27 - 23 ganador: 23   Aptitud:  18   =>  D B A C F 
+1) 31 - 34 ganador: 31   Aptitud:  18   =>  D B A C F 
+2) 4 - 18 ganador: 4   Aptitud:  21   =>  B D F C A 
+3) 15 - 45 ganador: 45   Aptitud:  24   =>  B D A F C 
+4) 14 - 46 ganador: 46   Aptitud:  19   =>  D B C F A 
+5) 2 - 4 ganador: 4   Aptitud:  21   =>  B D F C A 
+6) 40 - 8 ganador: 8   Aptitud:  31   =>  F A D B C 
+7) 40 - 11 ganador: 11   Aptitud:  19   =>  B D F A C 
+8) 41 - 14 ganador: 14   Aptitud:  30   =>  D A B C F 
+9) 7 - 47 ganador: 7   Aptitud:  24   =>  D B C A F 
+10) 8 - 27 ganador: 27   Aptitud:  21   =>  B D F C A 
+11) 24 - 43 ganador: 43   Aptitud:  21   =>  B D F C A 
+12) 5 - 23 ganador: 23   Aptitud:  18   =>  D B A C F 
+13) 18 - 14 ganador: 18   Aptitud:  25   =>  B A D F C 
+14) 5 - 33 ganador: 5   Aptitud:  19   =>  B D F A C 
+15) 45 - 0 ganador: 45   Aptitud:  24   =>  B D A F C 
+16) 46 - 16 ganador: 46   Aptitud:  19   =>  D B C F A 
+17) 29 - 7 ganador: 29   Aptitud:  24   =>  B D A F C 
+18) 14 - 13 ganador: 13   Aptitud:  24   =>  D B C A F 
+19) 41 - 44 ganador: 44   Aptitud:  18   =>  D B A C F 
+20) 39 - 42 ganador: 39   Aptitud:  33   =>  B D C A F 
+21) 45 - 7 ganador: 45   Aptitud:  24   =>  B D A F C 
+22) 5 - 10 ganador: 5   Aptitud:  19   =>  B D F A C 
+23) 19 - 26 ganador: 19   Aptitud:  29   =>  A B D C F 
+24) 19 - 10 ganador: 10   Aptitud:  19   =>  B D F A C 
+25) 12 - 11 ganador: 12   Aptitud:  18   =>  D B A C F 
+26) 39 - 8 ganador: 8   Aptitud:  31   =>  F A D B C 
+27) 21 - 9 ganador: 21   Aptitud:  24   =>  D F A C B 
+28) 5 - 18 ganador: 5   Aptitud:  19   =>  B D F A C 
+29) 3 - 49 ganador: 3   Aptitud:  21   =>  B D F C A 
+30) 39 - 15 ganador: 15   Aptitud:  25   =>  B A D F C 
+31) 5 - 44 ganador: 44   Aptitud:  18   =>  D B A C F 
+32) 43 - 22 ganador: 22   Aptitud:  18   =>  D B A C F 
+33) 49 - 3 ganador: 3   Aptitud:  21   =>  B D F C A 
+34) 23 - 1 ganador: 23   Aptitud:  18   =>  D B A C F 
+35) 43 - 29 ganador: 43   Aptitud:  21   =>  B D F C A 
+36) 34 - 38 ganador: 34   Aptitud:  24   =>  B D A F C 
+37) 14 - 15 ganador: 15   Aptitud:  25   =>  B A D F C 
+38) 45 - 40 ganador: 45   Aptitud:  24   =>  B D A F C 
+39) 32 - 11 ganador: 32   Aptitud:  19   =>  B D F A C 
+40) 2 - 31 ganador: 31   Aptitud:  18   =>  D B A C F 
+41) 30 - 37 ganador: 30   Aptitud:  24   =>  B D A F C 
+42) 27 - 6 ganador: 27   Aptitud:  21   =>  B D F C A 
+43) 28 - 45 ganador: 28   Aptitud:  18   =>  D B A C F 
+44) 14 - 18 ganador: 18   Aptitud:  25   =>  B A D F C 
+45) 30 - 47 ganador: 30   Aptitud:  24   =>  B D A F C 
+46) 40 - 6 ganador: 6   Aptitud:  24   =>  D B C A F 
+47) 40 - 32 ganador: 32   Aptitud:  19   =>  B D F A C 
+48) 23 - 15 ganador: 23   Aptitud:  18   =>  D B A C F 
+49) 26 - 34 ganador: 34   Aptitud:  24   =>  B D A F C 
+-------------------------------------------------
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: B D F C A 
+Padre 2: B D A F C 
+Hijo 1: B D F C A 
+Hijo 2: B D F A C 
+------------------------------------------------ 
+Padre 1: D B C F A 
+Padre 2: B D F C A 
+Hijo 1: D B C F A 
+Hijo 2: B D F C A 
+------------------------------------------------ 
+Padre 1: F A D B C 
+Padre 2: B D F A C 
+Hijo 1: F D A B C 
+Hijo 2: B A D F C 
+------------------------------------------------ 
+Padre 1: D A B C F 
+Padre 2: D B C A F 
+Hijo 1: D B A C F 
+Hijo 2: D A B C F 
+------------------------------------------------ 
+Padre 1: B D F C A 
+Padre 2: B D F C A 
+Hijo 1: B D F C A 
+Hijo 2: B D F C A 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: B A D F C 
+Hijo 1: D A B C F 
+Hijo 2: B A D F C 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: B D A F C 
+Hijo 1: B D F A C 
+Hijo 2: B D A F C 
+------------------------------------------------ 
+Padre 1: D B C F A 
+Padre 2: B D A F C 
+Hijo 1: D B F C A 
+Hijo 2: B D F A C 
+------------------------------------------------ 
+Padre 1: D B C A F 
+Padre 2: D B A C F 
+Hijo 1: D B C A F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: B D C A F 
+Padre 2: B D A F C 
+Hijo 1: B D A C F 
+Hijo 2: B D A F C 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: A B D C F 
+Hijo 1: B D A F C 
+Hijo 2: A D B C F 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: D B A C F 
+Hijo 1: B D A F C 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: F A D B C 
+Padre 2: D F A C B 
+Hijo 1: F A D B C 
+Hijo 2: D A F C B 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: B D F C A 
+Hijo 1: B D F A C 
+Hijo 2: B D F C A 
+------------------------------------------------ 
+Padre 1: B A D F C 
+Padre 2: D B A C F 
+Hijo 1: B A D F C 
+Hijo 2: D A B C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: B D F C A 
+Hijo 1: D B C A F 
+Hijo 2: B D C F A 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: B D F C A 
+Hijo 1: D B C A F 
+Hijo 2: B D C F A 
+------------------------------------------------ 
+Padre 1: B D A F C 
+Padre 2: B A D F C 
+Hijo 1: B A D F C 
+Hijo 2: B D A F C 
+------------------------------------------------ 
+Padre 1: B D A F C 
+Padre 2: B D F A C 
+Hijo 1: B D A F C 
+Hijo 2: B D F A C 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: B D A F C 
+Hijo 1: D B A C F 
+Hijo 2: B D A F C 
+------------------------------------------------ 
+Padre 1: B D F C A 
+Padre 2: D B A C F 
+Hijo 1: B D C F A 
+Hijo 2: D B C A F 
+------------------------------------------------ 
+Padre 1: B A D F C 
+Padre 2: B D A F C 
+Hijo 1: B D A F C 
+Hijo 2: B A D F C 
+------------------------------------------------ 
+Padre 1: D B C A F 
+Padre 2: B D F A C 
+Hijo 1: D B A C F 
+Hijo 2: B D A F C 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: B D A F C 
+Hijo 1: D B A C F 
+Hijo 2: B D A F C 
+------------------------------------------------ 
+NUEVA POBLACION: 
+0) D B A C F 
+1) D B A C F 
+2) B D F C A 
+3) B D F A C 
+4) D B C F A 
+5) B D F C A 
+6) F D A B C 
+7) B A D F C 
+8) D B A C F 
+9) D A B C F 
+10) B D F C A 
+11) B D F C A 
+12) D A B C F 
+13) B A D F C 
+14) B D F A C 
+15) B D A F C 
+16) D B F C A 
+17) B D F A C 
+18) D B C A F 
+19) D B A C F 
+20) B D A C F 
+21) B D A F C 
+22) B D A F C 
+23) A D B C F 
+24) B D A F C 
+25) D B A C F 
+26) F A D B C 
+27) D A F C B 
+28) B D F A C 
+29) B D F C A 
+30) B A D F C 
+31) D A B C F 
+32) D B C A F 
+33) B D C F A 
+34) D B C A F 
+35) B D C F A 
+36) B A D F C 
+37) B D A F C 
+38) B D A F C 
+39) B D F A C 
+40) D B A C F 
+41) B D A F C 
+42) B D C F A 
+43) D B C A F 
+44) B D A F C 
+45) B A D F C 
+46) D B A C F 
+47) B D A F C 
+48) D B A C F 
+49) B D A F C 
+
+ Calcular la aptitud para cada individuo 
+0)  D B A C F      18
+1)  D B A C F      18
+2)  B D F C A      21
+3)  B D F A C      19
+4)  D B C F A      19
+5)  B D F C A      21
+6)  F D A B C      32
+7)  B A D F C      25
+8)  D B A C F      18
+9)  D A B C F      30
+10)  B D F C A      21
+11)  B D F C A      21
+12)  D A B C F      30
+13)  B A D F C      25
+14)  B D F A C      19
+15)  B D A F C      24
+16)  D B F C A      35
+17)  B D F A C      19
+18)  D B C A F      24
+19)  D B A C F      18
+20)  B D A C F      31
+21)  B D A F C      24
+22)  B D A F C      24
+23)  A D B C F      33
+24)  B D A F C      24
+25)  D B A C F      18
+26)  F A D B C      31
+27)  D A F C B      29
+28)  B D F A C      19
+29)  B D F C A      21
+30)  B A D F C      25
+31)  D A B C F      30
+32)  D B C A F      24
+33)  B D C F A      28
+34)  D B C A F      24
+35)  B D C F A      28
+36)  B A D F C      25
+37)  B D A F C      24
+38)  B D A F C      24
+39)  B D F A C      19
+40)  D B A C F      18
+41)  B D A F C      24
+42)  B D C F A      28
+43)  D B C A F      24
+44)  B D A F C      24
+45)  B A D F C      25
+46)  D B A C F      18
+47)  B D A F C      24
+48)  D B A C F      18
+49)  B D A F C      24
+
+ **********ITERACION 6**********
+0) 27 - 23 ganador: 27   Aptitud:  29   =>  D A F C B 
+1) 31 - 34 ganador: 34   Aptitud:  24   =>  D B C A F 
+2) 4 - 18 ganador: 4   Aptitud:  19   =>  D B C F A 
+3) 15 - 45 ganador: 15   Aptitud:  24   =>  B D A F C 
+4) 14 - 46 ganador: 46   Aptitud:  18   =>  D B A C F 
+5) 2 - 4 ganador: 4   Aptitud:  19   =>  D B C F A 
+6) 40 - 8 ganador: 40   Aptitud:  18   =>  D B A C F 
+7) 40 - 11 ganador: 40   Aptitud:  18   =>  D B A C F 
+8) 41 - 14 ganador: 14   Aptitud:  19   =>  B D F A C 
+9) 7 - 47 ganador: 47   Aptitud:  24   =>  B D A F C 
+10) 8 - 27 ganador: 8   Aptitud:  18   =>  D B A C F 
+11) 24 - 43 ganador: 24   Aptitud:  24   =>  B D A F C 
+12) 5 - 23 ganador: 5   Aptitud:  21   =>  B D F C A 
+13) 18 - 14 ganador: 14   Aptitud:  19   =>  B D F A C 
+14) 5 - 33 ganador: 5   Aptitud:  21   =>  B D F C A 
+15) 45 - 0 ganador: 0   Aptitud:  18   =>  D B A C F 
+16) 46 - 16 ganador: 46   Aptitud:  18   =>  D B A C F 
+17) 29 - 7 ganador: 29   Aptitud:  21   =>  B D F C A 
+18) 14 - 13 ganador: 14   Aptitud:  19   =>  B D F A C 
+19) 41 - 44 ganador: 41   Aptitud:  24   =>  B D A F C 
+20) 39 - 42 ganador: 39   Aptitud:  19   =>  B D F A C 
+21) 45 - 7 ganador: 45   Aptitud:  25   =>  B A D F C 
+22) 5 - 10 ganador: 5   Aptitud:  21   =>  B D F C A 
+23) 19 - 26 ganador: 19   Aptitud:  18   =>  D B A C F 
+24) 19 - 10 ganador: 19   Aptitud:  18   =>  D B A C F 
+25) 12 - 11 ganador: 11   Aptitud:  21   =>  B D F C A 
+26) 39 - 8 ganador: 8   Aptitud:  18   =>  D B A C F 
+27) 21 - 9 ganador: 21   Aptitud:  24   =>  B D A F C 
+28) 5 - 18 ganador: 5   Aptitud:  21   =>  B D F C A 
+29) 3 - 49 ganador: 3   Aptitud:  19   =>  B D F A C 
+30) 39 - 15 ganador: 39   Aptitud:  19   =>  B D F A C 
+31) 5 - 44 ganador: 5   Aptitud:  21   =>  B D F C A 
+32) 43 - 22 ganador: 43   Aptitud:  24   =>  D B C A F 
+33) 49 - 3 ganador: 3   Aptitud:  19   =>  B D F A C 
+34) 23 - 1 ganador: 1   Aptitud:  18   =>  D B A C F 
+35) 43 - 29 ganador: 29   Aptitud:  21   =>  B D F C A 
+36) 34 - 38 ganador: 34   Aptitud:  24   =>  D B C A F 
+37) 14 - 15 ganador: 14   Aptitud:  19   =>  B D F A C 
+38) 45 - 40 ganador: 40   Aptitud:  18   =>  D B A C F 
+39) 32 - 11 ganador: 11   Aptitud:  21   =>  B D F C A 
+40) 2 - 31 ganador: 2   Aptitud:  21   =>  B D F C A 
+41) 30 - 37 ganador: 37   Aptitud:  24   =>  B D A F C 
+42) 27 - 6 ganador: 27   Aptitud:  29   =>  D A F C B 
+43) 28 - 45 ganador: 28   Aptitud:  19   =>  B D F A C 
+44) 14 - 18 ganador: 14   Aptitud:  19   =>  B D F A C 
+45) 30 - 47 ganador: 47   Aptitud:  24   =>  B D A F C 
+46) 40 - 6 ganador: 40   Aptitud:  18   =>  D B A C F 
+47) 40 - 32 ganador: 40   Aptitud:  18   =>  D B A C F 
+48) 23 - 15 ganador: 15   Aptitud:  24   =>  B D A F C 
+49) 26 - 34 ganador: 34   Aptitud:  24   =>  D B C A F 
+-------------------------------------------------
+Padre 1: D A F C B 
+Padre 2: D B C A F 
+Hijo 1: D B A C F 
+Hijo 2: D A C B F 
+------------------------------------------------ 
+Padre 1: D B C F A 
+Padre 2: B D A F C 
+Hijo 1: D B F C A 
+Hijo 2: B D F A C 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B C F A 
+Hijo 1: D B C A F 
+Hijo 2: D B C F A 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: B D A F C 
+Hijo 1: B D F A C 
+Hijo 2: B D A F C 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: B D A F C 
+Hijo 1: D B A C F 
+Hijo 2: B D A F C 
+------------------------------------------------ 
+Padre 1: B D F C A 
+Padre 2: B D F A C 
+Hijo 1: B D F C A 
+Hijo 2: B D F A C 
+------------------------------------------------ 
+Padre 1: B D F C A 
+Padre 2: D B A C F 
+Hijo 1: B D C F A 
+Hijo 2: D B C A F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: B D F C A 
+Hijo 1: D B C A F 
+Hijo 2: B D C F A 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: B D A F C 
+Hijo 1: B D F A C 
+Hijo 2: B D A F C 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: B A D F C 
+Hijo 1: B A D F C 
+Hijo 2: B D A F C 
+------------------------------------------------ 
+Padre 1: B D F C A 
+Padre 2: D B A C F 
+Hijo 1: B D C F A 
+Hijo 2: D B C A F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: B D F C A 
+Hijo 1: D B C A F 
+Hijo 2: B D C F A 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: B D A F C 
+Hijo 1: D B A C F 
+Hijo 2: B D A F C 
+------------------------------------------------ 
+Padre 1: B D F C A 
+Padre 2: B D F A C 
+Hijo 1: B D F C A 
+Hijo 2: B D F A C 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: B D F C A 
+Hijo 1: B D F A C 
+Hijo 2: B D F C A 
+------------------------------------------------ 
+Padre 1: D B C A F 
+Padre 2: B D F A C 
+Hijo 1: D B A C F 
+Hijo 2: B D A F C 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: B D F C A 
+Hijo 1: D B C A F 
+Hijo 2: B D C F A 
+------------------------------------------------ 
+Padre 1: D B C A F 
+Padre 2: B D F A C 
+Hijo 1: D B A C F 
+Hijo 2: B D A F C 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: B D F C A 
+Hijo 1: D B C A F 
+Hijo 2: B D C F A 
+------------------------------------------------ 
+Padre 1: B D F C A 
+Padre 2: B D A F C 
+Hijo 1: B D F C A 
+Hijo 2: B D F A C 
+------------------------------------------------ 
+Padre 1: D A F C B 
+Padre 2: B D F A C 
+Hijo 1: D A F C B 
+Hijo 2: A D F B C 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: B D A F C 
+Hijo 1: B D F A C 
+Hijo 2: B D A F C 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: B D A F C 
+Padre 2: D B C A F 
+Hijo 1: B D A F C 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+NUEVA POBLACION: 
+0) D B A C F 
+1) D A C B F 
+2) D B F C A 
+3) B D F A C 
+4) D B C A F 
+5) D B C F A 
+6) D B A C F 
+7) D B A C F 
+8) B D F A C 
+9) B D A F C 
+10) D B A C F 
+11) B D A F C 
+12) B D F C A 
+13) B D F A C 
+14) B D C F A 
+15) D B C A F 
+16) D B C A F 
+17) B D C F A 
+18) B D F A C 
+19) B D A F C 
+20) B A D F C 
+21) B D A F C 
+22) B D C F A 
+23) D B C A F 
+24) D B C A F 
+25) B D C F A 
+26) D B A C F 
+27) B D A F C 
+28) B D F C A 
+29) B D F A C 
+30) B D F A C 
+31) B D F C A 
+32) D B A C F 
+33) B D A F C 
+34) D B C A F 
+35) B D C F A 
+36) D B A C F 
+37) B D A F C 
+38) D B C A F 
+39) B D C F A 
+40) B D F C A 
+41) B D F A C 
+42) D A F C B 
+43) A D F B C 
+44) B D F A C 
+45) B D A F C 
+46) D B A C F 
+47) D B A C F 
+48) B D A F C 
+49) D B A C F 
+
+ Calcular la aptitud para cada individuo 
+0)  D B A C F      18
+1)  D A C B F      52
+2)  D B F C A      35
+3)  B D F A C      19
+4)  D B C A F      24
+5)  D B C F A      19
+6)  D B A C F      18
+7)  D B A C F      18
+8)  B D F A C      19
+9)  B D A F C      24
+10)  D B A C F      18
+11)  B D A F C      24
+12)  B D F C A      21
+13)  B D F A C      19
+14)  B D C F A      28
+15)  D B C A F      24
+16)  D B C A F      24
+17)  B D C F A      28
+18)  B D F A C      19
+19)  B D A F C      24
+20)  B A D F C      25
+21)  B D A F C      24
+22)  B D C F A      28
+23)  D B C A F      24
+24)  D B C A F      24
+25)  B D C F A      28
+26)  D B A C F      18
+27)  B D A F C      24
+28)  B D F C A      21
+29)  B D F A C      19
+30)  B D F A C      19
+31)  B D F C A      21
+32)  D B A C F      18
+33)  B D A F C      24
+34)  D B C A F      24
+35)  B D C F A      28
+36)  D B A C F      18
+37)  B D A F C      24
+38)  D B C A F      24
+39)  B D C F A      28
+40)  B D F C A      21
+41)  B D F A C      19
+42)  D A F C B      29
+43)  A D F B C      49
+44)  B D F A C      19
+45)  B D A F C      24
+46)  D B A C F      18
+47)  D B A C F      18
+48)  B D A F C      24
+49)  D B A C F      18
+
+ **********ITERACION 7**********
+0) 27 - 23 ganador: 27   Aptitud:  24   =>  B D A F C 
+1) 31 - 34 ganador: 31   Aptitud:  21   =>  B D F C A 
+2) 4 - 18 ganador: 18   Aptitud:  19   =>  B D F A C 
+3) 15 - 45 ganador: 15   Aptitud:  24   =>  D B C A F 
+4) 14 - 46 ganador: 46   Aptitud:  18   =>  D B A C F 
+5) 2 - 4 ganador: 4   Aptitud:  24   =>  D B C A F 
+6) 40 - 8 ganador: 8   Aptitud:  19   =>  B D F A C 
+7) 40 - 11 ganador: 40   Aptitud:  21   =>  B D F C A 
+8) 41 - 14 ganador: 41   Aptitud:  19   =>  B D F A C 
+9) 7 - 47 ganador: 7   Aptitud:  18   =>  D B A C F 
+10) 8 - 27 ganador: 8   Aptitud:  19   =>  B D F A C 
+11) 24 - 43 ganador: 24   Aptitud:  24   =>  D B C A F 
+12) 5 - 23 ganador: 5   Aptitud:  19   =>  D B C F A 
+13) 18 - 14 ganador: 18   Aptitud:  19   =>  B D F A C 
+14) 5 - 33 ganador: 5   Aptitud:  19   =>  D B C F A 
+15) 45 - 0 ganador: 0   Aptitud:  18   =>  D B A C F 
+16) 46 - 16 ganador: 46   Aptitud:  18   =>  D B A C F 
+17) 29 - 7 ganador: 7   Aptitud:  18   =>  D B A C F 
+18) 14 - 13 ganador: 13   Aptitud:  19   =>  B D F A C 
+19) 41 - 44 ganador: 41   Aptitud:  19   =>  B D F A C 
+20) 39 - 42 ganador: 39   Aptitud:  28   =>  B D C F A 
+21) 45 - 7 ganador: 7   Aptitud:  18   =>  D B A C F 
+22) 5 - 10 ganador: 10   Aptitud:  18   =>  D B A C F 
+23) 19 - 26 ganador: 26   Aptitud:  18   =>  D B A C F 
+24) 19 - 10 ganador: 10   Aptitud:  18   =>  D B A C F 
+25) 12 - 11 ganador: 12   Aptitud:  21   =>  B D F C A 
+26) 39 - 8 ganador: 8   Aptitud:  19   =>  B D F A C 
+27) 21 - 9 ganador: 21   Aptitud:  24   =>  B D A F C 
+28) 5 - 18 ganador: 5   Aptitud:  19   =>  D B C F A 
+29) 3 - 49 ganador: 49   Aptitud:  18   =>  D B A C F 
+30) 39 - 15 ganador: 15   Aptitud:  24   =>  D B C A F 
+31) 5 - 44 ganador: 5   Aptitud:  19   =>  D B C F A 
+32) 43 - 22 ganador: 22   Aptitud:  28   =>  B D C F A 
+33) 49 - 3 ganador: 49   Aptitud:  18   =>  D B A C F 
+34) 23 - 1 ganador: 23   Aptitud:  24   =>  D B C A F 
+35) 43 - 29 ganador: 29   Aptitud:  19   =>  B D F A C 
+36) 34 - 38 ganador: 34   Aptitud:  24   =>  D B C A F 
+37) 14 - 15 ganador: 15   Aptitud:  24   =>  D B C A F 
+38) 45 - 40 ganador: 40   Aptitud:  21   =>  B D F C A 
+39) 32 - 11 ganador: 32   Aptitud:  18   =>  D B A C F 
+40) 2 - 31 ganador: 31   Aptitud:  21   =>  B D F C A 
+41) 30 - 37 ganador: 30   Aptitud:  19   =>  B D F A C 
+42) 27 - 6 ganador: 6   Aptitud:  18   =>  D B A C F 
+43) 28 - 45 ganador: 28   Aptitud:  21   =>  B D F C A 
+44) 14 - 18 ganador: 18   Aptitud:  19   =>  B D F A C 
+45) 30 - 47 ganador: 47   Aptitud:  18   =>  D B A C F 
+46) 40 - 6 ganador: 6   Aptitud:  18   =>  D B A C F 
+47) 40 - 32 ganador: 32   Aptitud:  18   =>  D B A C F 
+48) 23 - 15 ganador: 23   Aptitud:  24   =>  D B C A F 
+49) 26 - 34 ganador: 26   Aptitud:  18   =>  D B A C F 
+-------------------------------------------------
+Padre 1: B D A F C 
+Padre 2: B D F C A 
+Hijo 1: B D F A C 
+Hijo 2: B D F C A 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: D B C A F 
+Hijo 1: B D A F C 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B C A F 
+Hijo 1: D B A C F 
+Hijo 2: D B C A F 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: B D F C A 
+Hijo 1: B D F A C 
+Hijo 2: B D F C A 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: D B A C F 
+Hijo 1: B D A F C 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: D B C A F 
+Hijo 1: B D A F C 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B C F A 
+Padre 2: B D F A C 
+Hijo 1: D B F C A 
+Hijo 2: B D F A C 
+------------------------------------------------ 
+Padre 1: D B C F A 
+Padre 2: D B A C F 
+Hijo 1: D B C F A 
+Hijo 2: D B C A F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: B D F A C 
+Hijo 1: B D F A C 
+Hijo 2: B D F A C 
+------------------------------------------------ 
+Padre 1: B D C F A 
+Padre 2: D B A C F 
+Hijo 1: B D C F A 
+Hijo 2: D B C A F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: B D F C A 
+Hijo 1: D B C A F 
+Hijo 2: B D C F A 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: B D A F C 
+Hijo 1: B D F A C 
+Hijo 2: B D A F C 
+------------------------------------------------ 
+Padre 1: D B C F A 
+Padre 2: D B A C F 
+Hijo 1: D B C F A 
+Hijo 2: D B C A F 
+------------------------------------------------ 
+Padre 1: D B C A F 
+Padre 2: D B C F A 
+Hijo 1: D B C A F 
+Hijo 2: D B C F A 
+------------------------------------------------ 
+Padre 1: B D C F A 
+Padre 2: D B A C F 
+Hijo 1: B D C F A 
+Hijo 2: D B C A F 
+------------------------------------------------ 
+Padre 1: D B C A F 
+Padre 2: B D F A C 
+Hijo 1: D B A C F 
+Hijo 2: B D A F C 
+------------------------------------------------ 
+Padre 1: D B C A F 
+Padre 2: D B C A F 
+Hijo 1: D B C A F 
+Hijo 2: D B C A F 
+------------------------------------------------ 
+Padre 1: B D F C A 
+Padre 2: D B A C F 
+Hijo 1: B D C F A 
+Hijo 2: D B C A F 
+------------------------------------------------ 
+Padre 1: B D F C A 
+Padre 2: B D F A C 
+Hijo 1: B D F C A 
+Hijo 2: B D F A C 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: B D F C A 
+Hijo 1: D B C A F 
+Hijo 2: B D C F A 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: D B A C F 
+Hijo 1: B D A F C 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B C A F 
+Padre 2: D B A C F 
+Hijo 1: D B C A F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+NUEVA POBLACION: 
+0) B D F A C 
+1) B D F C A 
+2) B D A F C 
+3) D B A C F 
+4) D B A C F 
+5) D B C A F 
+6) B D F A C 
+7) B D F C A 
+8) B D A F C 
+9) D B A C F 
+10) B D A F C 
+11) D B A C F 
+12) D B F C A 
+13) B D F A C 
+14) D B C F A 
+15) D B C A F 
+16) D B A C F 
+17) D B A C F 
+18) B D F A C 
+19) B D F A C 
+20) B D C F A 
+21) D B C A F 
+22) D B A C F 
+23) D B A C F 
+24) D B C A F 
+25) B D C F A 
+26) B D F A C 
+27) B D A F C 
+28) D B C F A 
+29) D B C A F 
+30) D B C A F 
+31) D B C F A 
+32) B D C F A 
+33) D B C A F 
+34) D B A C F 
+35) B D A F C 
+36) D B C A F 
+37) D B C A F 
+38) B D C F A 
+39) D B C A F 
+40) B D F C A 
+41) B D F A C 
+42) D B C A F 
+43) B D C F A 
+44) B D A F C 
+45) D B A C F 
+46) D B A C F 
+47) D B A C F 
+48) D B C A F 
+49) D B A C F 
+
+ Calcular la aptitud para cada individuo 
+0)  B D F A C      19
+1)  B D F C A      21
+2)  B D A F C      24
+3)  D B A C F      18
+4)  D B A C F      18
+5)  D B C A F      24
+6)  B D F A C      19
+7)  B D F C A      21
+8)  B D A F C      24
+9)  D B A C F      18
+10)  B D A F C      24
+11)  D B A C F      18
+12)  D B F C A      35
+13)  B D F A C      19
+14)  D B C F A      19
+15)  D B C A F      24
+16)  D B A C F      18
+17)  D B A C F      18
+18)  B D F A C      19
+19)  B D F A C      19
+20)  B D C F A      28
+21)  D B C A F      24
+22)  D B A C F      18
+23)  D B A C F      18
+24)  D B C A F      24
+25)  B D C F A      28
+26)  B D F A C      19
+27)  B D A F C      24
+28)  D B C F A      19
+29)  D B C A F      24
+30)  D B C A F      24
+31)  D B C F A      19
+32)  B D C F A      28
+33)  D B C A F      24
+34)  D B A C F      18
+35)  B D A F C      24
+36)  D B C A F      24
+37)  D B C A F      24
+38)  B D C F A      28
+39)  D B C A F      24
+40)  B D F C A      21
+41)  B D F A C      19
+42)  D B C A F      24
+43)  B D C F A      28
+44)  B D A F C      24
+45)  D B A C F      18
+46)  D B A C F      18
+47)  D B A C F      18
+48)  D B C A F      24
+49)  D B A C F      18
+
+ **********ITERACION 8**********
+0) 27 - 23 ganador: 23   Aptitud:  18   =>  D B A C F 
+1) 31 - 34 ganador: 34   Aptitud:  18   =>  D B A C F 
+2) 4 - 18 ganador: 4   Aptitud:  18   =>  D B A C F 
+3) 15 - 45 ganador: 45   Aptitud:  18   =>  D B A C F 
+4) 14 - 46 ganador: 46   Aptitud:  18   =>  D B A C F 
+5) 2 - 4 ganador: 4   Aptitud:  18   =>  D B A C F 
+6) 40 - 8 ganador: 40   Aptitud:  21   =>  B D F C A 
+7) 40 - 11 ganador: 11   Aptitud:  18   =>  D B A C F 
+8) 41 - 14 ganador: 41   Aptitud:  19   =>  B D F A C 
+9) 7 - 47 ganador: 47   Aptitud:  18   =>  D B A C F 
+10) 8 - 27 ganador: 8   Aptitud:  24   =>  B D A F C 
+11) 24 - 43 ganador: 24   Aptitud:  24   =>  D B C A F 
+12) 5 - 23 ganador: 23   Aptitud:  18   =>  D B A C F 
+13) 18 - 14 ganador: 18   Aptitud:  19   =>  B D F A C 
+14) 5 - 33 ganador: 5   Aptitud:  24   =>  D B C A F 
+15) 45 - 0 ganador: 45   Aptitud:  18   =>  D B A C F 
+16) 46 - 16 ganador: 46   Aptitud:  18   =>  D B A C F 
+17) 29 - 7 ganador: 7   Aptitud:  21   =>  B D F C A 
+18) 14 - 13 ganador: 14   Aptitud:  19   =>  D B C F A 
+19) 41 - 44 ganador: 41   Aptitud:  19   =>  B D F A C 
+20) 39 - 42 ganador: 39   Aptitud:  24   =>  D B C A F 
+21) 45 - 7 ganador: 45   Aptitud:  18   =>  D B A C F 
+22) 5 - 10 ganador: 5   Aptitud:  24   =>  D B C A F 
+23) 19 - 26 ganador: 19   Aptitud:  19   =>  B D F A C 
+24) 19 - 10 ganador: 19   Aptitud:  19   =>  B D F A C 
+25) 12 - 11 ganador: 11   Aptitud:  18   =>  D B A C F 
+26) 39 - 8 ganador: 39   Aptitud:  24   =>  D B C A F 
+27) 21 - 9 ganador: 9   Aptitud:  18   =>  D B A C F 
+28) 5 - 18 ganador: 18   Aptitud:  19   =>  B D F A C 
+29) 3 - 49 ganador: 3   Aptitud:  18   =>  D B A C F 
+30) 39 - 15 ganador: 39   Aptitud:  24   =>  D B C A F 
+31) 5 - 44 ganador: 5   Aptitud:  24   =>  D B C A F 
+32) 43 - 22 ganador: 22   Aptitud:  18   =>  D B A C F 
+33) 49 - 3 ganador: 49   Aptitud:  18   =>  D B A C F 
+34) 23 - 1 ganador: 23   Aptitud:  18   =>  D B A C F 
+35) 43 - 29 ganador: 29   Aptitud:  24   =>  D B C A F 
+36) 34 - 38 ganador: 34   Aptitud:  18   =>  D B A C F 
+37) 14 - 15 ganador: 14   Aptitud:  19   =>  D B C F A 
+38) 45 - 40 ganador: 45   Aptitud:  18   =>  D B A C F 
+39) 32 - 11 ganador: 11   Aptitud:  18   =>  D B A C F 
+40) 2 - 31 ganador: 31   Aptitud:  19   =>  D B C F A 
+41) 30 - 37 ganador: 30   Aptitud:  24   =>  D B C A F 
+42) 27 - 6 ganador: 6   Aptitud:  19   =>  B D F A C 
+43) 28 - 45 ganador: 45   Aptitud:  18   =>  D B A C F 
+44) 14 - 18 ganador: 14   Aptitud:  19   =>  D B C F A 
+45) 30 - 47 ganador: 47   Aptitud:  18   =>  D B A C F 
+46) 40 - 6 ganador: 6   Aptitud:  19   =>  B D F A C 
+47) 40 - 32 ganador: 40   Aptitud:  21   =>  B D F C A 
+48) 23 - 15 ganador: 23   Aptitud:  18   =>  D B A C F 
+49) 26 - 34 ganador: 34   Aptitud:  18   =>  D B A C F 
+-------------------------------------------------
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: B D F C A 
+Padre 2: D B A C F 
+Hijo 1: B D C F A 
+Hijo 2: D B C A F 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: D B A C F 
+Hijo 1: B D A F C 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: B D A F C 
+Padre 2: D B C A F 
+Hijo 1: B D A F C 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: B D F A C 
+Hijo 1: D B A C F 
+Hijo 2: B D A F C 
+------------------------------------------------ 
+Padre 1: D B C A F 
+Padre 2: D B A C F 
+Hijo 1: D B C A F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: B D F C A 
+Hijo 1: D B C A F 
+Hijo 2: B D C F A 
+------------------------------------------------ 
+Padre 1: D B C F A 
+Padre 2: B D F A C 
+Hijo 1: D B F C A 
+Hijo 2: B D F A C 
+------------------------------------------------ 
+Padre 1: D B C A F 
+Padre 2: D B A C F 
+Hijo 1: D B C A F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B C A F 
+Padre 2: B D F A C 
+Hijo 1: D B A C F 
+Hijo 2: B D A F C 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: D B A C F 
+Hijo 1: B D A F C 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B C A F 
+Padre 2: D B A C F 
+Hijo 1: D B C A F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: D B A C F 
+Hijo 1: B D A F C 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B C A F 
+Padre 2: D B C A F 
+Hijo 1: D B C A F 
+Hijo 2: D B C A F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B C A F 
+Hijo 1: D B A C F 
+Hijo 2: D B C A F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B C F A 
+Hijo 1: D B C A F 
+Hijo 2: D B C F A 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B C F A 
+Padre 2: D B C A F 
+Hijo 1: D B C F A 
+Hijo 2: D B C A F 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: D B A C F 
+Hijo 1: B D A F C 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B C F A 
+Padre 2: D B A C F 
+Hijo 1: D B C F A 
+Hijo 2: D B C A F 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: B D F C A 
+Hijo 1: B D F A C 
+Hijo 2: B D F C A 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+NUEVA POBLACION: 
+0) D B A C F 
+1) D B A C F 
+2) D B A C F 
+3) D B A C F 
+4) D B A C F 
+5) D B A C F 
+6) B D C F A 
+7) D B C A F 
+8) B D A F C 
+9) D B A C F 
+10) B D A F C 
+11) D B A C F 
+12) D B A C F 
+13) B D A F C 
+14) D B C A F 
+15) D B A C F 
+16) D B C A F 
+17) B D C F A 
+18) D B F C A 
+19) B D F A C 
+20) D B C A F 
+21) D B A C F 
+22) D B A C F 
+23) B D A F C 
+24) B D A F C 
+25) D B A C F 
+26) D B C A F 
+27) D B A C F 
+28) B D A F C 
+29) D B A C F 
+30) D B C A F 
+31) D B C A F 
+32) D B A C F 
+33) D B A C F 
+34) D B A C F 
+35) D B C A F 
+36) D B C A F 
+37) D B C F A 
+38) D B A C F 
+39) D B A C F 
+40) D B C F A 
+41) D B C A F 
+42) B D A F C 
+43) D B A C F 
+44) D B C F A 
+45) D B C A F 
+46) B D F A C 
+47) B D F C A 
+48) D B A C F 
+49) D B A C F 
+
+ Calcular la aptitud para cada individuo 
+0)  D B A C F      18
+1)  D B A C F      18
+2)  D B A C F      18
+3)  D B A C F      18
+4)  D B A C F      18
+5)  D B A C F      18
+6)  B D C F A      28
+7)  D B C A F      24
+8)  B D A F C      24
+9)  D B A C F      18
+10)  B D A F C      24
+11)  D B A C F      18
+12)  D B A C F      18
+13)  B D A F C      24
+14)  D B C A F      24
+15)  D B A C F      18
+16)  D B C A F      24
+17)  B D C F A      28
+18)  D B F C A      35
+19)  B D F A C      19
+20)  D B C A F      24
+21)  D B A C F      18
+22)  D B A C F      18
+23)  B D A F C      24
+24)  B D A F C      24
+25)  D B A C F      18
+26)  D B C A F      24
+27)  D B A C F      18
+28)  B D A F C      24
+29)  D B A C F      18
+30)  D B C A F      24
+31)  D B C A F      24
+32)  D B A C F      18
+33)  D B A C F      18
+34)  D B A C F      18
+35)  D B C A F      24
+36)  D B C A F      24
+37)  D B C F A      19
+38)  D B A C F      18
+39)  D B A C F      18
+40)  D B C F A      19
+41)  D B C A F      24
+42)  B D A F C      24
+43)  D B A C F      18
+44)  D B C F A      19
+45)  D B C A F      24
+46)  B D F A C      19
+47)  B D F C A      21
+48)  D B A C F      18
+49)  D B A C F      18
+
+ **********ITERACION 9**********
+0) 27 - 23 ganador: 27   Aptitud:  18   =>  D B A C F 
+1) 31 - 34 ganador: 34   Aptitud:  18   =>  D B A C F 
+2) 4 - 18 ganador: 4   Aptitud:  18   =>  D B A C F 
+3) 15 - 45 ganador: 15   Aptitud:  18   =>  D B A C F 
+4) 14 - 46 ganador: 46   Aptitud:  19   =>  B D F A C 
+5) 2 - 4 ganador: 2   Aptitud:  18   =>  D B A C F 
+6) 40 - 8 ganador: 40   Aptitud:  19   =>  D B C F A 
+7) 40 - 11 ganador: 11   Aptitud:  18   =>  D B A C F 
+8) 41 - 14 ganador: 41   Aptitud:  24   =>  D B C A F 
+9) 7 - 47 ganador: 47   Aptitud:  21   =>  B D F C A 
+10) 8 - 27 ganador: 27   Aptitud:  18   =>  D B A C F 
+11) 24 - 43 ganador: 43   Aptitud:  18   =>  D B A C F 
+12) 5 - 23 ganador: 5   Aptitud:  18   =>  D B A C F 
+13) 18 - 14 ganador: 14   Aptitud:  24   =>  D B C A F 
+14) 5 - 33 ganador: 5   Aptitud:  18   =>  D B A C F 
+15) 45 - 0 ganador: 0   Aptitud:  18   =>  D B A C F 
+16) 46 - 16 ganador: 46   Aptitud:  19   =>  B D F A C 
+17) 29 - 7 ganador: 29   Aptitud:  18   =>  D B A C F 
+18) 14 - 13 ganador: 14   Aptitud:  24   =>  D B C A F 
+19) 41 - 44 ganador: 44   Aptitud:  19   =>  D B C F A 
+20) 39 - 42 ganador: 39   Aptitud:  18   =>  D B A C F 
+21) 45 - 7 ganador: 45   Aptitud:  24   =>  D B C A F 
+22) 5 - 10 ganador: 5   Aptitud:  18   =>  D B A C F 
+23) 19 - 26 ganador: 19   Aptitud:  19   =>  B D F A C 
+24) 19 - 10 ganador: 19   Aptitud:  19   =>  B D F A C 
+25) 12 - 11 ganador: 12   Aptitud:  18   =>  D B A C F 
+26) 39 - 8 ganador: 39   Aptitud:  18   =>  D B A C F 
+27) 21 - 9 ganador: 21   Aptitud:  18   =>  D B A C F 
+28) 5 - 18 ganador: 5   Aptitud:  18   =>  D B A C F 
+29) 3 - 49 ganador: 3   Aptitud:  18   =>  D B A C F 
+30) 39 - 15 ganador: 39   Aptitud:  18   =>  D B A C F 
+31) 5 - 44 ganador: 5   Aptitud:  18   =>  D B A C F 
+32) 43 - 22 ganador: 43   Aptitud:  18   =>  D B A C F 
+33) 49 - 3 ganador: 49   Aptitud:  18   =>  D B A C F 
+34) 23 - 1 ganador: 1   Aptitud:  18   =>  D B A C F 
+35) 43 - 29 ganador: 43   Aptitud:  18   =>  D B A C F 
+36) 34 - 38 ganador: 34   Aptitud:  18   =>  D B A C F 
+37) 14 - 15 ganador: 15   Aptitud:  18   =>  D B A C F 
+38) 45 - 40 ganador: 40   Aptitud:  19   =>  D B C F A 
+39) 32 - 11 ganador: 32   Aptitud:  18   =>  D B A C F 
+40) 2 - 31 ganador: 2   Aptitud:  18   =>  D B A C F 
+41) 30 - 37 ganador: 37   Aptitud:  19   =>  D B C F A 
+42) 27 - 6 ganador: 27   Aptitud:  18   =>  D B A C F 
+43) 28 - 45 ganador: 28   Aptitud:  24   =>  B D A F C 
+44) 14 - 18 ganador: 14   Aptitud:  24   =>  D B C A F 
+45) 30 - 47 ganador: 47   Aptitud:  21   =>  B D F C A 
+46) 40 - 6 ganador: 40   Aptitud:  19   =>  D B C F A 
+47) 40 - 32 ganador: 32   Aptitud:  18   =>  D B A C F 
+48) 23 - 15 ganador: 15   Aptitud:  18   =>  D B A C F 
+49) 26 - 34 ganador: 34   Aptitud:  18   =>  D B A C F 
+-------------------------------------------------
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: D B A C F 
+Hijo 1: B D A F C 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B C F A 
+Padre 2: D B A C F 
+Hijo 1: D B C F A 
+Hijo 2: D B C A F 
+------------------------------------------------ 
+Padre 1: D B C A F 
+Padre 2: B D F C A 
+Hijo 1: D B C A F 
+Hijo 2: B D C F A 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B C A F 
+Hijo 1: D B A C F 
+Hijo 2: D B C A F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: D B A C F 
+Hijo 1: B D A F C 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B C A F 
+Padre 2: D B C F A 
+Hijo 1: D B C A F 
+Hijo 2: D B C F A 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B C A F 
+Hijo 1: D B A C F 
+Hijo 2: D B C A F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: B D F A C 
+Hijo 1: D B A C F 
+Hijo 2: B D A F C 
+------------------------------------------------ 
+Padre 1: B D F A C 
+Padre 2: D B A C F 
+Hijo 1: B D A F C 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B C F A 
+Padre 2: D B A C F 
+Hijo 1: D B C F A 
+Hijo 2: D B C A F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B C F A 
+Hijo 1: D B C A F 
+Hijo 2: D B C F A 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: B D A F C 
+Hijo 1: D B A C F 
+Hijo 2: B D A F C 
+------------------------------------------------ 
+Padre 1: D B C A F 
+Padre 2: B D F C A 
+Hijo 1: D B C A F 
+Hijo 2: B D C F A 
+------------------------------------------------ 
+Padre 1: D B C F A 
+Padre 2: D B A C F 
+Hijo 1: D B C F A 
+Hijo 2: D B C A F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+NUEVA POBLACION: 
+0) D B A C F 
+1) D B A C F 
+2) D B A C F 
+3) D B A C F 
+4) B D A F C 
+5) D B A C F 
+6) D B C F A 
+7) D B C A F 
+8) D B C A F 
+9) B D C F A 
+10) D B A C F 
+11) D B A C F 
+12) D B A C F 
+13) D B C A F 
+14) D B A C F 
+15) D B A C F 
+16) B D A F C 
+17) D B A C F 
+18) D B C A F 
+19) D B C F A 
+20) D B A C F 
+21) D B C A F 
+22) D B A C F 
+23) B D A F C 
+24) B D A F C 
+25) D B A C F 
+26) D B A C F 
+27) D B A C F 
+28) D B A C F 
+29) D B A C F 
+30) D B A C F 
+31) D B A C F 
+32) D B A C F 
+33) D B A C F 
+34) D B A C F 
+35) D B A C F 
+36) D B A C F 
+37) D B A C F 
+38) D B C F A 
+39) D B C A F 
+40) D B C A F 
+41) D B C F A 
+42) D B A C F 
+43) B D A F C 
+44) D B C A F 
+45) B D C F A 
+46) D B C F A 
+47) D B C A F 
+48) D B A C F 
+49) D B A C F 
+
+ Calcular la aptitud para cada individuo 
+0)  D B A C F      18
+1)  D B A C F      18
+2)  D B A C F      18
+3)  D B A C F      18
+4)  B D A F C      24
+5)  D B A C F      18
+6)  D B C F A      19
+7)  D B C A F      24
+8)  D B C A F      24
+9)  B D C F A      28
+10)  D B A C F      18
+11)  D B A C F      18
+12)  D B A C F      18
+13)  D B C A F      24
+14)  D B A C F      18
+15)  D B A C F      18
+16)  B D A F C      24
+17)  D B A C F      18
+18)  D B C A F      24
+19)  D B C F A      19
+20)  D B A C F      18
+21)  D B C A F      24
+22)  D B A C F      18
+23)  B D A F C      24
+24)  B D A F C      24
+25)  D B A C F      18
+26)  D B A C F      18
+27)  D B A C F      18
+28)  D B A C F      18
+29)  D B A C F      18
+30)  D B A C F      18
+31)  D B A C F      18
+32)  D B A C F      18
+33)  D B A C F      18
+34)  D B A C F      18
+35)  D B A C F      18
+36)  D B A C F      18
+37)  D B A C F      18
+38)  D B C F A      19
+39)  D B C A F      24
+40)  D B C A F      24
+41)  D B C F A      19
+42)  D B A C F      18
+43)  B D A F C      24
+44)  D B C A F      24
+45)  B D C F A      28
+46)  D B C F A      19
+47)  D B C A F      24
+48)  D B A C F      18
+49)  D B A C F      18
+
+ **********ITERACION 10**********
+0) 27 - 23 ganador: 27   Aptitud:  18   =>  D B A C F 
+1) 31 - 34 ganador: 31   Aptitud:  18   =>  D B A C F 
+2) 4 - 18 ganador: 4   Aptitud:  24   =>  B D A F C 
+3) 15 - 45 ganador: 15   Aptitud:  18   =>  D B A C F 
+4) 14 - 46 ganador: 14   Aptitud:  18   =>  D B A C F 
+5) 2 - 4 ganador: 2   Aptitud:  18   =>  D B A C F 
+6) 40 - 8 ganador: 40   Aptitud:  24   =>  D B C A F 
+7) 40 - 11 ganador: 11   Aptitud:  18   =>  D B A C F 
+8) 41 - 14 ganador: 14   Aptitud:  18   =>  D B A C F 
+9) 7 - 47 ganador: 7   Aptitud:  24   =>  D B C A F 
+10) 8 - 27 ganador: 27   Aptitud:  18   =>  D B A C F 
+11) 24 - 43 ganador: 24   Aptitud:  24   =>  B D A F C 
+12) 5 - 23 ganador: 5   Aptitud:  18   =>  D B A C F 
+13) 18 - 14 ganador: 14   Aptitud:  18   =>  D B A C F 
+14) 5 - 33 ganador: 5   Aptitud:  18   =>  D B A C F 
+15) 45 - 0 ganador: 0   Aptitud:  18   =>  D B A C F 
+16) 46 - 16 ganador: 46   Aptitud:  19   =>  D B C F A 
+17) 29 - 7 ganador: 29   Aptitud:  18   =>  D B A C F 
+18) 14 - 13 ganador: 14   Aptitud:  18   =>  D B A C F 
+19) 41 - 44 ganador: 41   Aptitud:  19   =>  D B C F A 
+20) 39 - 42 ganador: 42   Aptitud:  18   =>  D B A C F 
+21) 45 - 7 ganador: 7   Aptitud:  24   =>  D B C A F 
+22) 5 - 10 ganador: 5   Aptitud:  18   =>  D B A C F 
+23) 19 - 26 ganador: 26   Aptitud:  18   =>  D B A C F 
+24) 19 - 10 ganador: 10   Aptitud:  18   =>  D B A C F 
+25) 12 - 11 ganador: 12   Aptitud:  18   =>  D B A C F 
+26) 39 - 8 ganador: 39   Aptitud:  24   =>  D B C A F 
+27) 21 - 9 ganador: 21   Aptitud:  24   =>  D B C A F 
+28) 5 - 18 ganador: 5   Aptitud:  18   =>  D B A C F 
+29) 3 - 49 ganador: 3   Aptitud:  18   =>  D B A C F 
+30) 39 - 15 ganador: 15   Aptitud:  18   =>  D B A C F 
+31) 5 - 44 ganador: 5   Aptitud:  18   =>  D B A C F 
+32) 43 - 22 ganador: 22   Aptitud:  18   =>  D B A C F 
+33) 49 - 3 ganador: 49   Aptitud:  18   =>  D B A C F 
+34) 23 - 1 ganador: 1   Aptitud:  18   =>  D B A C F 
+35) 43 - 29 ganador: 29   Aptitud:  18   =>  D B A C F 
+36) 34 - 38 ganador: 34   Aptitud:  18   =>  D B A C F 
+37) 14 - 15 ganador: 14   Aptitud:  18   =>  D B A C F 
+38) 45 - 40 ganador: 40   Aptitud:  24   =>  D B C A F 
+39) 32 - 11 ganador: 32   Aptitud:  18   =>  D B A C F 
+40) 2 - 31 ganador: 2   Aptitud:  18   =>  D B A C F 
+41) 30 - 37 ganador: 30   Aptitud:  18   =>  D B A C F 
+42) 27 - 6 ganador: 27   Aptitud:  18   =>  D B A C F 
+43) 28 - 45 ganador: 28   Aptitud:  18   =>  D B A C F 
+44) 14 - 18 ganador: 14   Aptitud:  18   =>  D B A C F 
+45) 30 - 47 ganador: 30   Aptitud:  18   =>  D B A C F 
+46) 40 - 6 ganador: 6   Aptitud:  19   =>  D B C F A 
+47) 40 - 32 ganador: 32   Aptitud:  18   =>  D B A C F 
+48) 23 - 15 ganador: 15   Aptitud:  18   =>  D B A C F 
+49) 26 - 34 ganador: 26   Aptitud:  18   =>  D B A C F 
+-------------------------------------------------
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: B D A F C 
+Padre 2: D B A C F 
+Hijo 1: B D A F C 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B C A F 
+Padre 2: D B A C F 
+Hijo 1: D B C A F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B C A F 
+Hijo 1: D B A C F 
+Hijo 2: D B C A F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: B D A F C 
+Hijo 1: D B A C F 
+Hijo 2: B D A F C 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B C F A 
+Padre 2: D B A C F 
+Hijo 1: D B C F A 
+Hijo 2: D B C A F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B C F A 
+Hijo 1: D B C A F 
+Hijo 2: D B C F A 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B C A F 
+Hijo 1: D B A C F 
+Hijo 2: D B C A F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B C A F 
+Padre 2: D B C A F 
+Hijo 1: D B C A F 
+Hijo 2: D B C A F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B C A F 
+Padre 2: D B A C F 
+Hijo 1: D B C A F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B C F A 
+Padre 2: D B A C F 
+Hijo 1: D B C F A 
+Hijo 2: D B C A F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+NUEVA POBLACION: 
+0) D B A C F 
+1) D B A C F 
+2) B D A F C 
+3) D B A C F 
+4) D B A C F 
+5) D B A C F 
+6) D B C A F 
+7) D B A C F 
+8) D B A C F 
+9) D B C A F 
+10) D B A C F 
+11) B D A F C 
+12) D B A C F 
+13) D B A C F 
+14) D B A C F 
+15) D B A C F 
+16) D B C F A 
+17) D B C A F 
+18) D B C A F 
+19) D B C F A 
+20) D B A C F 
+21) D B C A F 
+22) D B A C F 
+23) D B A C F 
+24) D B A C F 
+25) D B A C F 
+26) D B C A F 
+27) D B C A F 
+28) D B A C F 
+29) D B A C F 
+30) D B A C F 
+31) D B A C F 
+32) D B A C F 
+33) D B A C F 
+34) D B A C F 
+35) D B A C F 
+36) D B A C F 
+37) D B A C F 
+38) D B C A F 
+39) D B A C F 
+40) D B A C F 
+41) D B A C F 
+42) D B A C F 
+43) D B A C F 
+44) D B A C F 
+45) D B A C F 
+46) D B C F A 
+47) D B C A F 
+48) D B A C F 
+49) D B A C F 
+
+ Calcular la aptitud para cada individuo 
+0)  D B A C F      18
+1)  D B A C F      18
+2)  B D A F C      24
+3)  D B A C F      18
+4)  D B A C F      18
+5)  D B A C F      18
+6)  D B C A F      24
+7)  D B A C F      18
+8)  D B A C F      18
+9)  D B C A F      24
+10)  D B A C F      18
+11)  B D A F C      24
+12)  D B A C F      18
+13)  D B A C F      18
+14)  D B A C F      18
+15)  D B A C F      18
+16)  D B C F A      19
+17)  D B C A F      24
+18)  D B C A F      24
+19)  D B C F A      19
+20)  D B A C F      18
+21)  D B C A F      24
+22)  D B A C F      18
+23)  D B A C F      18
+24)  D B A C F      18
+25)  D B A C F      18
+26)  D B C A F      24
+27)  D B C A F      24
+28)  D B A C F      18
+29)  D B A C F      18
+30)  D B A C F      18
+31)  D B A C F      18
+32)  D B A C F      18
+33)  D B A C F      18
+34)  D B A C F      18
+35)  D B A C F      18
+36)  D B A C F      18
+37)  D B A C F      18
+38)  D B C A F      24
+39)  D B A C F      18
+40)  D B A C F      18
+41)  D B A C F      18
+42)  D B A C F      18
+43)  D B A C F      18
+44)  D B A C F      18
+45)  D B A C F      18
+46)  D B C F A      19
+47)  D B C A F      24
+48)  D B A C F      18
+49)  D B A C F      18
+
+ **********ITERACION 11**********
+0) 31 - 21 ganador: 31   Aptitud:  18   =>  D B A C F 
+1) 27 - 29 ganador: 29   Aptitud:  18   =>  D B A C F 
+2) 19 - 45 ganador: 45   Aptitud:  18   =>  D B A C F 
+3) 27 - 18 ganador: 27   Aptitud:  24   =>  D B C A F 
+4) 7 - 48 ganador: 7   Aptitud:  18   =>  D B A C F 
+5) 4 - 48 ganador: 4   Aptitud:  18   =>  D B A C F 
+6) 10 - 36 ganador: 10   Aptitud:  18   =>  D B A C F 
+7) 14 - 49 ganador: 14   Aptitud:  18   =>  D B A C F 
+8) 9 - 39 ganador: 39   Aptitud:  18   =>  D B A C F 
+9) 38 - 22 ganador: 22   Aptitud:  18   =>  D B A C F 
+10) 24 - 8 ganador: 24   Aptitud:  18   =>  D B A C F 
+11) 21 - 8 ganador: 8   Aptitud:  18   =>  D B A C F 
+12) 8 - 14 ganador: 8   Aptitud:  18   =>  D B A C F 
+13) 9 - 40 ganador: 40   Aptitud:  18   =>  D B A C F 
+14) 30 - 0 ganador: 30   Aptitud:  18   =>  D B A C F 
+15) 46 - 19 ganador: 46   Aptitud:  19   =>  D B C F A 
+16) 9 - 35 ganador: 35   Aptitud:  18   =>  D B A C F 
+17) 9 - 32 ganador: 32   Aptitud:  18   =>  D B A C F 
+18) 20 - 44 ganador: 20   Aptitud:  18   =>  D B A C F 
+19) 20 - 21 ganador: 20   Aptitud:  18   =>  D B A C F 
+20) 10 - 7 ganador: 10   Aptitud:  18   =>  D B A C F 
+21) 45 - 4 ganador: 45   Aptitud:  18   =>  D B A C F 
+22) 49 - 40 ganador: 49   Aptitud:  18   =>  D B A C F 
+23) 49 - 26 ganador: 49   Aptitud:  18   =>  D B A C F 
+24) 26 - 12 ganador: 12   Aptitud:  18   =>  D B A C F 
+25) 12 - 19 ganador: 12   Aptitud:  18   =>  D B A C F 
+26) 23 - 10 ganador: 23   Aptitud:  18   =>  D B A C F 
+27) 20 - 19 ganador: 20   Aptitud:  18   =>  D B A C F 
+28) 49 - 34 ganador: 49   Aptitud:  18   =>  D B A C F 
+29) 33 - 13 ganador: 33   Aptitud:  18   =>  D B A C F 
+30) 8 - 31 ganador: 8   Aptitud:  18   =>  D B A C F 
+31) 17 - 33 ganador: 33   Aptitud:  18   =>  D B A C F 
+32) 29 - 6 ganador: 29   Aptitud:  18   =>  D B A C F 
+33) 20 - 7 ganador: 20   Aptitud:  18   =>  D B A C F 
+34) 39 - 27 ganador: 39   Aptitud:  18   =>  D B A C F 
+35) 24 - 2 ganador: 24   Aptitud:  18   =>  D B A C F 
+36) 23 - 14 ganador: 23   Aptitud:  18   =>  D B A C F 
+37) 25 - 22 ganador: 25   Aptitud:  18   =>  D B A C F 
+38) 6 - 21 ganador: 6   Aptitud:  24   =>  D B C A F 
+39) 12 - 44 ganador: 12   Aptitud:  18   =>  D B A C F 
+40) 17 - 23 ganador: 23   Aptitud:  18   =>  D B A C F 
+41) 28 - 30 ganador: 28   Aptitud:  18   =>  D B A C F 
+42) 36 - 32 ganador: 36   Aptitud:  18   =>  D B A C F 
+43) 18 - 35 ganador: 35   Aptitud:  18   =>  D B A C F 
+44) 3 - 37 ganador: 3   Aptitud:  18   =>  D B A C F 
+45) 29 - 8 ganador: 29   Aptitud:  18   =>  D B A C F 
+46) 35 - 39 ganador: 35   Aptitud:  18   =>  D B A C F 
+47) 10 - 17 ganador: 10   Aptitud:  18   =>  D B A C F 
+48) 8 - 41 ganador: 8   Aptitud:  18   =>  D B A C F 
+49) 24 - 37 ganador: 24   Aptitud:  18   =>  D B A C F 
+-------------------------------------------------
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B C A F 
+Hijo 1: D B A C F 
+Hijo 2: D B C A F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B C F A 
+Hijo 1: D B C A F 
+Hijo 2: D B C F A 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B C A F 
+Padre 2: D B A C F 
+Hijo 1: D B C A F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+NUEVA POBLACION: 
+0) D B A C F 
+1) D B A C F 
+2) D B A C F 
+3) D B C A F 
+4) D B A C F 
+5) D B A C F 
+6) D B A C F 
+7) D B A C F 
+8) D B A C F 
+9) D B A C F 
+10) D B A C F 
+11) D B A C F 
+12) D B A C F 
+13) D B A C F 
+14) D B C A F 
+15) D B C F A 
+16) D B A C F 
+17) D B A C F 
+18) D B A C F 
+19) D B A C F 
+20) D B A C F 
+21) D B A C F 
+22) D B A C F 
+23) D B A C F 
+24) D B A C F 
+25) D B A C F 
+26) D B A C F 
+27) D B A C F 
+28) D B A C F 
+29) D B A C F 
+30) D B A C F 
+31) D B A C F 
+32) D B A C F 
+33) D B A C F 
+34) D B A C F 
+35) D B A C F 
+36) D B A C F 
+37) D B A C F 
+38) D B C A F 
+39) D B A C F 
+40) D B A C F 
+41) D B A C F 
+42) D B A C F 
+43) D B A C F 
+44) D B A C F 
+45) D B A C F 
+46) D B A C F 
+47) D B A C F 
+48) D B A C F 
+49) D B A C F 
+
+ Calcular la aptitud para cada individuo 
+0)  D B A C F      18
+1)  D B A C F      18
+2)  D B A C F      18
+3)  D B C A F      24
+4)  D B A C F      18
+5)  D B A C F      18
+6)  D B A C F      18
+7)  D B A C F      18
+8)  D B A C F      18
+9)  D B A C F      18
+10)  D B A C F      18
+11)  D B A C F      18
+12)  D B A C F      18
+13)  D B A C F      18
+14)  D B C A F      24
+15)  D B C F A      19
+16)  D B A C F      18
+17)  D B A C F      18
+18)  D B A C F      18
+19)  D B A C F      18
+20)  D B A C F      18
+21)  D B A C F      18
+22)  D B A C F      18
+23)  D B A C F      18
+24)  D B A C F      18
+25)  D B A C F      18
+26)  D B A C F      18
+27)  D B A C F      18
+28)  D B A C F      18
+29)  D B A C F      18
+30)  D B A C F      18
+31)  D B A C F      18
+32)  D B A C F      18
+33)  D B A C F      18
+34)  D B A C F      18
+35)  D B A C F      18
+36)  D B A C F      18
+37)  D B A C F      18
+38)  D B C A F      24
+39)  D B A C F      18
+40)  D B A C F      18
+41)  D B A C F      18
+42)  D B A C F      18
+43)  D B A C F      18
+44)  D B A C F      18
+45)  D B A C F      18
+46)  D B A C F      18
+47)  D B A C F      18
+48)  D B A C F      18
+49)  D B A C F      18
+
+ **********ITERACION 12**********
+0) 31 - 21 ganador: 31   Aptitud:  18   =>  D B A C F 
+1) 27 - 29 ganador: 27   Aptitud:  18   =>  D B A C F 
+2) 19 - 45 ganador: 19   Aptitud:  18   =>  D B A C F 
+3) 27 - 18 ganador: 27   Aptitud:  18   =>  D B A C F 
+4) 7 - 48 ganador: 7   Aptitud:  18   =>  D B A C F 
+5) 4 - 48 ganador: 4   Aptitud:  18   =>  D B A C F 
+6) 10 - 36 ganador: 10   Aptitud:  18   =>  D B A C F 
+7) 14 - 49 ganador: 49   Aptitud:  18   =>  D B A C F 
+8) 9 - 39 ganador: 9   Aptitud:  18   =>  D B A C F 
+9) 38 - 22 ganador: 22   Aptitud:  18   =>  D B A C F 
+10) 24 - 8 ganador: 24   Aptitud:  18   =>  D B A C F 
+11) 21 - 8 ganador: 21   Aptitud:  18   =>  D B A C F 
+12) 8 - 14 ganador: 8   Aptitud:  18   =>  D B A C F 
+13) 9 - 40 ganador: 9   Aptitud:  18   =>  D B A C F 
+14) 30 - 0 ganador: 30   Aptitud:  18   =>  D B A C F 
+15) 46 - 19 ganador: 46   Aptitud:  18   =>  D B A C F 
+16) 9 - 35 ganador: 9   Aptitud:  18   =>  D B A C F 
+17) 9 - 32 ganador: 9   Aptitud:  18   =>  D B A C F 
+18) 20 - 44 ganador: 20   Aptitud:  18   =>  D B A C F 
+19) 20 - 21 ganador: 20   Aptitud:  18   =>  D B A C F 
+20) 10 - 7 ganador: 10   Aptitud:  18   =>  D B A C F 
+21) 45 - 4 ganador: 45   Aptitud:  18   =>  D B A C F 
+22) 49 - 40 ganador: 49   Aptitud:  18   =>  D B A C F 
+23) 49 - 26 ganador: 49   Aptitud:  18   =>  D B A C F 
+24) 26 - 12 ganador: 26   Aptitud:  18   =>  D B A C F 
+25) 12 - 19 ganador: 12   Aptitud:  18   =>  D B A C F 
+26) 23 - 10 ganador: 23   Aptitud:  18   =>  D B A C F 
+27) 20 - 19 ganador: 20   Aptitud:  18   =>  D B A C F 
+28) 49 - 34 ganador: 49   Aptitud:  18   =>  D B A C F 
+29) 33 - 13 ganador: 33   Aptitud:  18   =>  D B A C F 
+30) 8 - 31 ganador: 8   Aptitud:  18   =>  D B A C F 
+31) 17 - 33 ganador: 17   Aptitud:  18   =>  D B A C F 
+32) 29 - 6 ganador: 29   Aptitud:  18   =>  D B A C F 
+33) 20 - 7 ganador: 20   Aptitud:  18   =>  D B A C F 
+34) 39 - 27 ganador: 39   Aptitud:  18   =>  D B A C F 
+35) 24 - 2 ganador: 24   Aptitud:  18   =>  D B A C F 
+36) 23 - 14 ganador: 23   Aptitud:  18   =>  D B A C F 
+37) 25 - 22 ganador: 25   Aptitud:  18   =>  D B A C F 
+38) 6 - 21 ganador: 6   Aptitud:  18   =>  D B A C F 
+39) 12 - 44 ganador: 12   Aptitud:  18   =>  D B A C F 
+40) 17 - 23 ganador: 17   Aptitud:  18   =>  D B A C F 
+41) 28 - 30 ganador: 28   Aptitud:  18   =>  D B A C F 
+42) 36 - 32 ganador: 36   Aptitud:  18   =>  D B A C F 
+43) 18 - 35 ganador: 18   Aptitud:  18   =>  D B A C F 
+44) 3 - 37 ganador: 37   Aptitud:  18   =>  D B A C F 
+45) 29 - 8 ganador: 29   Aptitud:  18   =>  D B A C F 
+46) 35 - 39 ganador: 35   Aptitud:  18   =>  D B A C F 
+47) 10 - 17 ganador: 10   Aptitud:  18   =>  D B A C F 
+48) 8 - 41 ganador: 8   Aptitud:  18   =>  D B A C F 
+49) 24 - 37 ganador: 24   Aptitud:  18   =>  D B A C F 
+-------------------------------------------------
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+NUEVA POBLACION: 
+0) D B A C F 
+1) D B A C F 
+2) D B A C F 
+3) D B A C F 
+4) D B A C F 
+5) D B A C F 
+6) D B A C F 
+7) D B A C F 
+8) D B A C F 
+9) D B A C F 
+10) D B A C F 
+11) D B A C F 
+12) D B A C F 
+13) D B A C F 
+14) D B A C F 
+15) D B A C F 
+16) D B A C F 
+17) D B A C F 
+18) D B A C F 
+19) D B A C F 
+20) D B A C F 
+21) D B A C F 
+22) D B A C F 
+23) D B A C F 
+24) D B A C F 
+25) D B A C F 
+26) D B A C F 
+27) D B A C F 
+28) D B A C F 
+29) D B A C F 
+30) D B A C F 
+31) D B A C F 
+32) D B A C F 
+33) D B A C F 
+34) D B A C F 
+35) D B A C F 
+36) D B A C F 
+37) D B A C F 
+38) D B A C F 
+39) D B A C F 
+40) D B A C F 
+41) D B A C F 
+42) D B A C F 
+43) D B A C F 
+44) D B A C F 
+45) D B A C F 
+46) D B A C F 
+47) D B A C F 
+48) D B A C F 
+49) D B A C F 
+
+ Calcular la aptitud para cada individuo 
+0)  D B A C F      18
+1)  D B A C F      18
+2)  D B A C F      18
+3)  D B A C F      18
+4)  D B A C F      18
+5)  D B A C F      18
+6)  D B A C F      18
+7)  D B A C F      18
+8)  D B A C F      18
+9)  D B A C F      18
+10)  D B A C F      18
+11)  D B A C F      18
+12)  D B A C F      18
+13)  D B A C F      18
+14)  D B A C F      18
+15)  D B A C F      18
+16)  D B A C F      18
+17)  D B A C F      18
+18)  D B A C F      18
+19)  D B A C F      18
+20)  D B A C F      18
+21)  D B A C F      18
+22)  D B A C F      18
+23)  D B A C F      18
+24)  D B A C F      18
+25)  D B A C F      18
+26)  D B A C F      18
+27)  D B A C F      18
+28)  D B A C F      18
+29)  D B A C F      18
+30)  D B A C F      18
+31)  D B A C F      18
+32)  D B A C F      18
+33)  D B A C F      18
+34)  D B A C F      18
+35)  D B A C F      18
+36)  D B A C F      18
+37)  D B A C F      18
+38)  D B A C F      18
+39)  D B A C F      18
+40)  D B A C F      18
+41)  D B A C F      18
+42)  D B A C F      18
+43)  D B A C F      18
+44)  D B A C F      18
+45)  D B A C F      18
+46)  D B A C F      18
+47)  D B A C F      18
+48)  D B A C F      18
+49)  D B A C F      18
+
+ **********ITERACION 13**********
+0) 31 - 21 ganador: 31   Aptitud:  18   =>  D B A C F 
+1) 27 - 29 ganador: 27   Aptitud:  18   =>  D B A C F 
+2) 19 - 45 ganador: 19   Aptitud:  18   =>  D B A C F 
+3) 27 - 18 ganador: 27   Aptitud:  18   =>  D B A C F 
+4) 7 - 48 ganador: 7   Aptitud:  18   =>  D B A C F 
+5) 4 - 48 ganador: 4   Aptitud:  18   =>  D B A C F 
+6) 10 - 36 ganador: 10   Aptitud:  18   =>  D B A C F 
+7) 14 - 49 ganador: 14   Aptitud:  18   =>  D B A C F 
+8) 9 - 39 ganador: 9   Aptitud:  18   =>  D B A C F 
+9) 38 - 22 ganador: 38   Aptitud:  18   =>  D B A C F 
+10) 24 - 8 ganador: 24   Aptitud:  18   =>  D B A C F 
+11) 21 - 8 ganador: 21   Aptitud:  18   =>  D B A C F 
+12) 8 - 14 ganador: 8   Aptitud:  18   =>  D B A C F 
+13) 9 - 40 ganador: 9   Aptitud:  18   =>  D B A C F 
+14) 30 - 0 ganador: 30   Aptitud:  18   =>  D B A C F 
+15) 46 - 19 ganador: 46   Aptitud:  18   =>  D B A C F 
+16) 9 - 35 ganador: 9   Aptitud:  18   =>  D B A C F 
+17) 9 - 32 ganador: 9   Aptitud:  18   =>  D B A C F 
+18) 20 - 44 ganador: 20   Aptitud:  18   =>  D B A C F 
+19) 20 - 21 ganador: 20   Aptitud:  18   =>  D B A C F 
+20) 10 - 7 ganador: 10   Aptitud:  18   =>  D B A C F 
+21) 45 - 4 ganador: 45   Aptitud:  18   =>  D B A C F 
+22) 49 - 40 ganador: 49   Aptitud:  18   =>  D B A C F 
+23) 49 - 26 ganador: 49   Aptitud:  18   =>  D B A C F 
+24) 26 - 12 ganador: 26   Aptitud:  18   =>  D B A C F 
+25) 12 - 19 ganador: 12   Aptitud:  18   =>  D B A C F 
+26) 23 - 10 ganador: 23   Aptitud:  18   =>  D B A C F 
+27) 20 - 19 ganador: 20   Aptitud:  18   =>  D B A C F 
+28) 49 - 34 ganador: 49   Aptitud:  18   =>  D B A C F 
+29) 33 - 13 ganador: 33   Aptitud:  18   =>  D B A C F 
+30) 8 - 31 ganador: 8   Aptitud:  18   =>  D B A C F 
+31) 17 - 33 ganador: 17   Aptitud:  18   =>  D B A C F 
+32) 29 - 6 ganador: 29   Aptitud:  18   =>  D B A C F 
+33) 20 - 7 ganador: 20   Aptitud:  18   =>  D B A C F 
+34) 39 - 27 ganador: 39   Aptitud:  18   =>  D B A C F 
+35) 24 - 2 ganador: 24   Aptitud:  18   =>  D B A C F 
+36) 23 - 14 ganador: 23   Aptitud:  18   =>  D B A C F 
+37) 25 - 22 ganador: 25   Aptitud:  18   =>  D B A C F 
+38) 6 - 21 ganador: 6   Aptitud:  18   =>  D B A C F 
+39) 12 - 44 ganador: 12   Aptitud:  18   =>  D B A C F 
+40) 17 - 23 ganador: 17   Aptitud:  18   =>  D B A C F 
+41) 28 - 30 ganador: 28   Aptitud:  18   =>  D B A C F 
+42) 36 - 32 ganador: 36   Aptitud:  18   =>  D B A C F 
+43) 18 - 35 ganador: 18   Aptitud:  18   =>  D B A C F 
+44) 3 - 37 ganador: 3   Aptitud:  18   =>  D B A C F 
+45) 29 - 8 ganador: 29   Aptitud:  18   =>  D B A C F 
+46) 35 - 39 ganador: 35   Aptitud:  18   =>  D B A C F 
+47) 10 - 17 ganador: 10   Aptitud:  18   =>  D B A C F 
+48) 8 - 41 ganador: 8   Aptitud:  18   =>  D B A C F 
+49) 24 - 37 ganador: 24   Aptitud:  18   =>  D B A C F 
+-------------------------------------------------
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+Padre 1: D B A C F 
+Padre 2: D B A C F 
+Hijo 1: D B A C F 
+Hijo 2: D B A C F 
+------------------------------------------------ 
+NUEVA POBLACION: 
+0) D B A C F 
+1) D B A C F 
+2) D B A C F 
+3) D B A C F 
+4) D B A C F 
+5) D B A C F 
+6) D B A C F 
+7) D B A C F 
+8) D B A C F 
+9) D B A C F 
+10) D B A C F 
+11) D B A C F 
+12) D B A C F 
+13) D B A C F 
+14) D B A C F 
+15) D B A C F 
+16) D B A C F 
+17) D B A C F 
+18) D B A C F 
+19) D B A C F 
+20) D B A C F 
+21) D B A C F 
+22) D B A C F 
+23) D B A C F 
+24) D B A C F 
+25) D B A C F 
+26) D B A C F 
+27) D B A C F 
+28) D B A C F 
+29) D B A C F 
+30) D B A C F 
+31) D B A C F 
+32) D B A C F 
+33) D B A C F 
+34) D B A C F 
+35) D B A C F 
+36) D B A C F 
+37) D B A C F 
+38) D B A C F 
+39) D B A C F 
+40) D B A C F 
+41) D B A C F 
+42) D B A C F 
+43) D B A C F 
+44) D B A C F 
+45) D B A C F 
+46) D B A C F 
+47) D B A C F 
+48) D B A C F 
+49) D B A C F 
